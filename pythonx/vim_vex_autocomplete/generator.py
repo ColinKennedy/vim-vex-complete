@@ -9,14 +9,16 @@ import bs4
 _ROOT_URL = 'http://www.sidefx.com/docs/houdini/vex/functions'
 
 
-def get_all_function_pages():
-    def _get_page(url):
-        try:
-            page = urllib2.urlopen(url)
-        except Exception:
-            return None
-        return bs4.BeautifulSoup(page, 'html.parser')
+def _get_page(url):
+    try:
+        page = urllib2.urlopen(url)
+    except Exception:
+        print('Could not load url "{url}"'.format(url=url))
+        return None
+    return bs4.BeautifulSoup(page, 'html.parser')
 
+
+def get_all_function_pages():
     page = urllib2.urlopen(_ROOT_URL)
     soup = bs4.BeautifulSoup(page, 'html.parser')
 
