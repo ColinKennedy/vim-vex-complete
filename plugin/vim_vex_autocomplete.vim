@@ -12,4 +12,4 @@ EOF
 endfunction
 
 
-autocmd! CompleteDone *.vex :call ExpandVexSignature(v:completed_item)
+" autocmd! CompleteDone *.vex :call ExpandVexSignature(v:completed_item)
