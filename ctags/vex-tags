@@ -1,0 +1,1529 @@
+Du(float n, ...)	/	language:vex
+Du(vector4 n, ...)	/	language:vex
+Du(vector n, ...)	/	language:vex
+Dv(float n, ...)	/	language:vex
+Dv(vector4 n, ...)	/	language:vex
+Dv(vector n, ...)	/	language:vex
+Dw(float p, ...)	/	language:vex
+Dw(vector4 p, ...)	/	language:vex
+Dw(vector p, ...)	/	language:vex
+abs(<vector>v)	/	language:vex
+abs(float n)	/	language:vex
+abs(int n)	/	language:vex
+accessframe(int frame)	/	language:vex
+acos(float v)	/	language:vex
+acos(vector2 v)	/	language:vex
+acos(vector4 v)	/	language:vex
+acos(vector v)	/	language:vex
+addattrib(int geohandle, string attribclass, string name, <type>defvalue)	/	language:vex
+addattrib(int geohandle, string attribclass, string name, <type>defvalue[])	/	language:vex
+adddetailattrib(int geohandle, string name, <type>defvalue)	/	language:vex
+adddetailattrib(int geohandle, string name, <type>defvalue, string typeinfo)	/	language:vex
+adddetailattrib(int geohandle, string name, <type>defvalue[])	/	language:vex
+adddetailattrib(int geohandle, string name, <type>defvalue[], string typeinfo)	/	language:vex
+addpoint(int geohandle, int point_number)	f  /	language:vex
+addpoint(int geohandle, vector pos)	f  /	language:vex
+addpointattrib(int geohandle, string name, <type>defvalue)	/	language:vex
+addpointattrib(int geohandle, string name, <type>defvalue, string typeinfo)	/	language:vex
+addpointattrib(int geohandle, string name, <type>defvalue[])	/	language:vex
+addpointattrib(int geohandle, string name, <type>defvalue[], string typeinfo)	/	language:vex
+addprim(int &prim_num, int geohandle, string type, int points[], int &vertices[])	/	language:vex
+addprim(int &prim_num, int geohandle, string type, int pt0, int &vertices[])	/	language:vex
+addprim(int &prim_num, int geohandle, string type, int pt0, int pt1, int &vertices[])	/	language:vex
+addprim(int &prim_num, int geohandle, string type, int pt0, int pt1, int pt2, int &vertices[])	/	language:vex
+addprim(int &prim_num, int geohandle, string type, int pt0, int pt1, int pt2, int pt3, int &vertices[])	/	language:vex
+addprim(int geohandle, string type)	/	language:vex
+addprim(int geohandle, string type, int points[])	/	language:vex
+addprim(int geohandle, string type, int pt0)	/	language:vex
+addprim(int geohandle, string type, int pt0, int pt1)	/	language:vex
+addprim(int geohandle, string type, int pt0, int pt1, int pt2)	/	language:vex
+addprim(int geohandle, string type, int pt0, int pt1, int pt2, int pt3)	/	language:vex
+addprimattrib(int geohandle, string name, <type>defvalue)	/	language:vex
+addprimattrib(int geohandle, string name, <type>defvalue, string typeinfo)	/	language:vex
+addprimattrib(int geohandle, string name, <type>defvalue[])	/	language:vex
+addprimattrib(int geohandle, string name, <type>defvalue[], string typeinfo)	/	language:vex
+addvariablename(int geohandle, string aname, string vname)	/	language:vex
+addvariablename(string aname, string vname)	/	language:vex
+addvertex(int geohandle, int prim_num, int point_num)	/	language:vex
+addvertexattrib(int geohandle, string name, <type>defvalue)	/	language:vex
+addvertexattrib(int geohandle, string name, <type>defvalue, string typeinfo)	/	language:vex
+addvertexattrib(int geohandle, string name, <type>defvalue[])	/	language:vex
+addvertexattrib(int geohandle, string name, <type>defvalue[], string typeinfo)	/	language:vex
+addvisualizer(int geohandle, string op_url)	/	language:vex
+agentaddclip(int geohandle, int prim, string clipname, string clippath, int keepref)	/	language:vex
+agentclipcatalog(<geometry>geometry, int prim)	/	language:vex
+agentclipchannel(<geometry>geometry, int prim, string clipname, string channel)	/	language:vex
+agentclipchannelnames(<geometry>geometry, int prim, string clipname)	/	language:vex
+agentcliplength(<geometry>geometry, int prim, string clipname)	/	language:vex
+agentclipnames(<geometry>geometry, int prim)	/	language:vex
+agentclipsample(<geometry>geometry, int prim, string clipname, float time, int channel_index)	/	language:vex
+agentclipsample(<geometry>geometry, int prim, string clipname, float time, string channel)	/	language:vex
+agentclipsamplelocal(<geometry>geometry, int prim, string clipname, float time)	/	language:vex
+agentclipsamplelocal(<geometry>geometry, int prim, string clipname, float time, int transform)	/	language:vex
+agentclipsamplerate(<geometry>geometry, int prim, string clipname)	/	language:vex
+agentclipsampleworld(<geometry>geometry, int prim, string clipname, float time)	/	language:vex
+agentclipsampleworld(<geometry>geometry, int prim, string clipname, float time, int transform)	/	language:vex
+agentcliptimes(<geometry>geometry, int prim)	/	language:vex
+agentcliptransformgroups(<geometry>geometry, int prim)	/	language:vex
+agentclipweights(<geometry>geometry, int prim)	/	language:vex
+agentcollisionlayer(<geometry>geometry, int prim)	/	language:vex
+agentcurrentlayer(<geometry>geometry, int prim)	/	language:vex
+agentfindtransformgroup(<geometry>geometry, int prim, string transformgroup)	/	language:vex
+agentlayerbindings(<geometry>geometry, int prim, string layername, string shapetype)	/	language:vex
+agentlayers(<geometry>geometry, int prim)	/	language:vex
+agentlayershapes(<geometry>geometry, int prim, string layername, int transform)	/	language:vex
+agentlayershapes(<geometry>geometry, int prim, string layername, string shapetype)	/	language:vex
+agentlocaltransform(<geometry>geometry, int prim, int transform)	/	language:vex
+agentlocaltransforms(<geometry>geometry, int prim)	/	language:vex
+agentrigchildren(<geometry>geometry, int prim, int transform)	/	language:vex
+agentrigfind(<geometry>geometry, int prim, string transformname)	/	language:vex
+agentrigparent(<geometry>geometry, int prim, int transform)	/	language:vex
+agentsolvefbik(<geometry>geometry, int outgeo, int prim, int targets[], matrix targetxforms[], int xformgroup, int iters)	/	language:vex
+agentsolvefbik(<geometry>geometry, int outgeo, int prim, int targets[], matrix targetxforms[], int xformgroup, int iters, float tolerance, int pinroot)	/	language:vex
+agentsolvefbik(<geometry>geometry, int outgeo, int prim, int targets[], matrix targetxforms[], int xformgroup, int iters, float tolerance, int pinroot, float targetweights[], int targetpriorities[], int targetdepths[])	/	language:vex
+agentsolvefbik(<geometry>geometry, int outgeo, int prim, int targets[], matrix targetxforms[], int xformgroup, int iters, float tolerance, int pinroot, float targetweights[], int targetpriorities[], int targetdepths[], string goalxformattrib, string constrainedxformattrib, string jointlimitsattrib)	/	language:vex
+agenttransformcount(<geometry>geometry, int prim)	/	language:vex
+agenttransformgroupmember(<geometry>geometry, int prim, int transformgroupidx, int transform)	/	language:vex
+agenttransformgroupmember(<geometry>geometry, int prim, string transformgroup, int transform)	/	language:vex
+agenttransformgroups(<geometry>geometry, int prim)	/	language:vex
+agenttransformgroupweight(<geometry>geometry, int prim, int transformgroup, int transform)	/	language:vex
+agenttransformnames(<geometry>geometry, int prim)	/	language:vex
+agenttransformtolocal(<geometry>geometry, int prim, matrix &transforms[])	/	language:vex
+agenttransformtoworld(<geometry>geometry, int prim, matrix &transforms[])	/	language:vex
+agentworldtransform(<geometry>geometry, int prim, int transform)	/	language:vex
+agentworldtransforms(<geometry>geometry, int prim)	/	language:vex
+albedo(bsdf b, ...)	/	language:vex
+albedo(bsdf b, int mask, ...)	/	language:vex
+albedo(bsdf b, vector viewer, ...)	/	language:vex
+albedo(bsdf b, vector viewer, int mask, ...)	/	language:vex
+alphaname()	/	language:vex
+ambient(...)	/	language:vex
+anoise(vector pos)	/	language:vex
+anoise(vector pos, int periodX, int periodY, int periodZ)	/	language:vex
+anoise(vector pos, int periodX, int periodY, int periodZ, int turbulence, float rough, float atten)	/	language:vex
+anoise(vector pos, int turbulence, float rough, float atten)	/	language:vex
+append(<type>&array[], <type>value)	/	language:vex
+append(<type>&array[], <type>values[])	/	language:vex
+append(string &array, string value)	/	language:vex
+area(vector p, ...)	/	language:vex
+argsort(<type>value[])	/	language:vex
+array(...)	/	language:vex
+ashikhmin(float exponentx, float exponenty, vector framex, vector framey, ...)	/	language:vex
+ashikhmin(vector nml, float exponentx, float exponenty, vector framex, vector framey, ...)	/	language:vex
+asin(float n)	/	language:vex
+asin(vector2 n)	/	language:vex
+asin(vector4 n)	/	language:vex
+asin(vector n)	/	language:vex
+assert_enabled()	/	language:vex
+assign(float &c1, float &c2, float &c3, float &c4, float &c5, float &c6, float &c7, float &c8, float &c9, float &c10, float &c11, float &c12, float &c13, float &c14, float &c15, float &c16, matrix source)	/	language:vex
+assign(float &c1, float &c2, float &c3, float &c4, float &c5, float &c6, float &c7, float &c8, float &c9, matrix3 source)	/	language:vex
+assign(float &c1, float &c2, float &c3, float &c4, matrix2 source)	/	language:vex
+assign(float &c1, float &c2, float &c3, float &c4, vector4 source)	/	language:vex
+assign(float &c1, float &c2, float &c3, vector source)	/	language:vex
+assign(float &c1, float &c2, vector2 source)	/	language:vex
+atan(<vector>v)	/	language:vex
+atan(float n)	/	language:vex
+atan(float y, float x)	/	language:vex
+atan2(float y, float x)	/	language:vex
+atof(string str)	/	language:vex
+atoi(string str)	/	language:vex
+atten(float attenuation, float distance)	/	language:vex
+attrib(<geometry>geometry, string attribclass, string name, int elemnum)	/	language:vex
+attribclass(<geometry>geometry, string attribute_name)	/	language:vex
+attribdataid(<geometry>geometry, string attribclass, string attribute_name)	/	language:vex
+attribsize(<geometry>geometry, string attribclass, string attribute_name)	/	language:vex
+attribtype(<geometry>geometry, string attribclass, string attribute_name)	/	language:vex
+attribtypeinfo(<geometry>geometry, string attribclass, string attribute_name)	/	language:vex
+avg(<type>arr[])	/	language:vex
+avg(float a)	/	language:vex
+avg(float a, float b, ...)	/	language:vex
+avg(int a)	/	language:vex
+avg(vector2 a, vector2 b, ...)	/	language:vex
+avg(vector2 v)	/	language:vex
+avg(vector4 a, vector4 b, ...)	/	language:vex
+avg(vector4 v)	/	language:vex
+avg(vector a, vector b, ...)	/	language:vex
+avg(vector v)	/	language:vex
+binput(float u, float v, ...)	/	language:vex
+binput(int comp, float u, float v, ...)	/	language:vex
+binput(int comp, int u, int v, ...)	/	language:vex
+binput(int opinput, int plane, float u, float v, ...)	/	language:vex
+binput(int opinput, int plane, int array_index, float u, float v, int frame, ...)	/	language:vex
+binput(int opinput, int plane, int array_index, int comp, float u, float v, int frame, ...)	/	language:vex
+binput(int opinput, int plane, int array_index, int comp, int u, int v, int frame, ...)	/	language:vex
+binput(int opinput, int plane, int array_index, int u, int v, int frame, ...)	/	language:vex
+binput(int opinput, int plane, int comp, float u, float v, ...)	/	language:vex
+binput(int opinput, int plane, int comp, int u, int v, ...)	/	language:vex
+binput(int opinput, int plane, int u, int v, ...)	/	language:vex
+binput(int u, int v, ...)	/	language:vex
+blackbody(float temperature, float luminance)	/	language:vex
+blinn(float exponent, ...)	/	language:vex
+blinn(vector nml, float exponent, ...)	/	language:vex
+blinn(vector nml, vector V, float roughness, ...)	/	language:vex
+blinnBRDF(vector L, vector N, vector V, float rough)	/	language:vex
+bouncelabel(int mask)	/	language:vex
+bouncemask(string labels)	/	language:vex
+bumpname()	/	language:vex
+cbrt(float n)	/	language:vex
+cbrt(vector2 v)	/	language:vex
+cbrt(vector4 v)	/	language:vex
+cbrt(vector v)	/	language:vex
+ceil(<vector>v)	/	language:vex
+ceil(float n)	/	language:vex
+ch(int op_id, int parm_index, int vector_index)	/	language:vex
+ch(int op_id, int parm_index, int vector_index, float time_in_sec)	/	language:vex
+ch(string channel)	/	language:vex
+ch(string channel, float time_in_sec)	/	language:vex
+ch2(string channel)	/	language:vex
+ch2(string channel, float time)	/	language:vex
+ch3(string channel)	/	language:vex
+ch3(string channel, float time)	/	language:vex
+ch4(string channel)	/	language:vex
+ch4(string channel, float time)	/	language:vex
+chadd(string channel_names)	/	language:vex
+chadd(string channel_names[])	/	language:vex
+chattr(int opinput, string attribclass, string attrname, int channel, int sample, int &success)	/	language:vex
+chattr(int opinput, string attrname, int &success)	/	language:vex
+chattr(int opinput, string attrname, int channel, int &success)	/	language:vex
+chattr(int opinput, string attrname, int channel, int sample, int &success)	/	language:vex
+chattr(string attrclass, string attrname, int channel, int sample, int &success)	/	language:vex
+chattr(string attrname, int &success)	/	language:vex
+chattr(string attrname, int channel, int &success)	/	language:vex
+chattr(string attrname, int channel, int sample, int &success)	/	language:vex
+chattrnames(int opinput, string attribclass)	/	language:vex
+chattrnames(string attrclass)	/	language:vex
+chend(int opinput=0)	/	language:vex
+chendf(int opinput=0)	/	language:vex
+chendt(int opinput=0)	/	language:vex
+chexpr(string channel, string new_expr_function)	/	language:vex
+chexprf(string channel, string new_expr_function, float frame)	/	language:vex
+chexprt(string channel, string new_expr_function, float time_in_seconds)	/	language:vex
+chf(int op_id, int parm_index, int vector_index)	/	language:vex
+chf(int op_id, int parm_index, int vector_index, float time_in_sec)	/	language:vex
+chf(string channel)	/	language:vex
+chf(string channel, float time_in_sec)	/	language:vex
+chi(string channel)	/	language:vex
+chi(string channel, float time)	/	language:vex
+chid(int op_id, int parm_index, int vector_index)	/	language:vex
+chid(string channel_path, int &op_id, int &parm_index, int &vector_index)	/	language:vex
+chid(string op_path, string channel_name, int &op_id, int &parm_index, int &vector_index)	/	language:vex
+chindex(int opinput, string name)	/	language:vex
+chindex(string name)	/	language:vex
+chindex(string names[])	/	language:vex
+chinput(int channel_index, float|intsample)	/	language:vex
+chinput(int channel_index, float|intsample, vector &t, vector &r, vector &s)	/	language:vex
+chinput(int opinput, int channel_index, float|intsample)	/	language:vex
+chinput(int opinput, int channel_index, float|intsample, vector &t, vector &r, vector &s)	/	language:vex
+chinput(int opinput, string channel_name, float|intsample)	/	language:vex
+chinput(int opinput, string channel_name, float|intsample, vector &t, vector &r, vector &s)	/	language:vex
+chinput(string channel_name, float|intsample)	/	language:vex
+chinput(string channel_name, float|intsample, vector &t, vector &r, vector &s)	/	language:vex
+chinputlimits(int opinput, int channel, float &channel_min, float &channel_max)	/	language:vex
+chname(int channel_index)	/	language:vex
+chname(int opinput, int channel_index)	/	language:vex
+chname(int plane_index, int chindex)	/	language:vex
+chnames()	/	language:vex
+chnames(int opinput)	/	language:vex
+chnumchan()	/	language:vex
+chnumchan(int opinput)	/	language:vex
+chop(string filename, int|stringchannel, float|intsample)	/	language:vex
+choplocal(string filename, int|stringchannel, float|intsample)	/	language:vex
+choplocalt(string filename, int|stringchannel, float|intsample, float time)	/	language:vex
+chopt(string filename, int|stringchannel, float|intsample, float time)	/	language:vex
+chp(string channel)	/	language:vex
+chp(string channel, float time)	/	language:vex
+chr(int value)	/	language:vex
+chramp(string channel, float ramppos)	/	language:vex
+chramp(string channel, float ramppos, float time)	/	language:vex
+chrate()	/	language:vex
+chrate(int opinput)	/	language:vex
+chreadbuf(int index)	/	language:vex
+chremove(int channel_index)	/	language:vex
+chremove(int channel_indices[])	/	language:vex
+chremove(string channel_name)	/	language:vex
+chremove(string channel_names[])	/	language:vex
+chremoveattr(string attrclass, string attrname)	/	language:vex
+chremoveattr(string attrclass, string attrnames[])	/	language:vex
+chremoveattr(string attrname)	/	language:vex
+chremoveattr(string attrnames[])	/	language:vex
+chrename(int channel_index, string new_name)	/	language:vex
+chrename(string channel_name, string new_name)	/	language:vex
+chresizebuf(int size)	/	language:vex
+chs(string channel)	/	language:vex
+chs(string channel, float time)	/	language:vex
+chsetattr(string attrclass, string attrname, int channel, int sample, <type>value)	/	language:vex
+chsetattr(string attrname, int channel, int sample, <type>value)	/	language:vex
+chsetlength(int clip_length)	/	language:vex
+chsetrate(float clip_rate)	/	language:vex
+chsetrate(int clip_rate)	/	language:vex
+chsetstart(float start)	/	language:vex
+chsetstart(int start)	/	language:vex
+chsraw(string channel)	/	language:vex
+chstart()	/	language:vex
+chstart(int opinput)	/	language:vex
+chstartf()	/	language:vex
+chstartf(int opinput)	/	language:vex
+chstartt()	/	language:vex
+chstartt(int opinput)	/	language:vex
+chu(string channel)	/	language:vex
+chu(string channel, float time)	/	language:vex
+chv(int opid, int pid)	/	language:vex
+chv(int opid, int pid, float time)	/	language:vex
+chv(string channel)	/	language:vex
+chv(string channel, float time)	/	language:vex
+chwritebuf(int index, float value)	/	language:vex
+chwritebuf(int index, vector t, vector r, vector s)	/	language:vex
+cinput(float u, float v, ...)	/	language:vex
+cinput(int component, float u, float v, ...)	/	language:vex
+cinput(int component, int u, int v, ...)	/	language:vex
+cinput(int opinput, int planeindex, float u, float v, ...)	/	language:vex
+cinput(int opinput, int planeindex, int arrayindex, float u, float v, int frame, ...)	/	language:vex
+cinput(int opinput, int planeindex, int arrayindex, int component, float u, float v, int frame, ...)	/	language:vex
+cinput(int opinput, int planeindex, int arrayindex, int component, int u, int v, int frame, ...)	/	language:vex
+cinput(int opinput, int planeindex, int arrayindex, int u, int v, int frame, ...)	/	language:vex
+cinput(int opinput, int planeindex, int component, float u, float v, ...)	/	language:vex
+cinput(int opinput, int planeindex, int component, int u, int v, ...)	/	language:vex
+cinput(int opinput, int planeindex, int u, int v, ...)	/	language:vex
+cinput(int u, int v, ...)	/	language:vex
+ckspline(float t, float value, float pos, ...)	/	language:vex
+ckspline(float t, vector4 value, float pos, ...)	/	language:vex
+ckspline(float t, vector value, float pos, ...)	/	language:vex
+clamp(float value, float min, float max)	/	language:vex
+clamp(int value, int min, int max)	/	language:vex
+clamp(vector2 value, vector2 min, vector2 max)	/	language:vex
+clamp(vector4 value, vector4 min, vector4 max)	/	language:vex
+clamp(vector value, vector min, vector max)	/	language:vex
+clip(int &result, vector &p0, vector &p1, vector4 plane)	/	language:vex
+clip(int &result, vector &p0, vector &p1, vector min, vector max)	/	language:vex
+colormap(string filename, float u, float v, ...)	/	language:vex
+colormap(string filename, float u0, float v0, float u1, float v1, float u2, float v2, float u3, float v3, int samples, ...)	/	language:vex
+colormap(string filename, vector uv, vector du, vector dv, int samples, ...)	/	language:vex
+colormap(string filename, vector uv0, vector uv1, vector uv2, vector uv3, ...)	/	language:vex
+colormap(string filename, vector uv0, vector uv1, vector uv2, vector uv3, int samples, ...)	/	language:vex
+colormap(string filename, vector uvw, ...)	/	language:vex
+colorname()	/	language:vex
+computenormal(int i)	/	language:vex
+computenormal(vector P, ...)	/	language:vex
+computenormal(vector P, vector N, vector Ng, ...)	/	language:vex
+concat(string s1, string s2, ...)	/	language:vex
+cone(vector dir, float angle, ...)	/	language:vex
+cone(vector normal, vector dir, float angle, ...)	/	language:vex
+cos(float n)	/	language:vex
+cos(vector2 n)	/	language:vex
+cos(vector4 n)	/	language:vex
+cos(vector n)	/	language:vex
+cosh(float n)	/	language:vex
+cosh(vector2 v)	/	language:vex
+cosh(vector4 v)	/	language:vex
+cosh(vector v)	/	language:vex
+cracktransform(int trs, int xyz, int c, vector pivot, matrix xform)	/	language:vex
+cracktransform(int trs, int xyz, int c, vector pivot, vector pivot_rotate, matrix xform)	/	language:vex
+cracktransform(int trs, int xyz, vector pivot, matrix xform, vector &t, vector &r, vector &s)	/	language:vex
+cracktransform(int trs, int xyz, vector pivot, vector pivot_rotate, matrix xform, vector &t, vector &r, vector &s, vector &shears)	/	language:vex
+create_cdf(float pdf[])	/	language:vex
+create_pdf(float values[])	/	language:vex
+cross(vector a, vector b)	/	language:vex
+cspline(float t, float val1, ...)	/	language:vex
+cspline(float t, vector4 val1, ...)	/	language:vex
+cspline(float t, vector val1, ...)	/	language:vex
+ctransform(string fromspace, string tospace, vector clr)	/	language:vex
+ctransform(string tospace, vector clr)	/	language:vex
+curlnoise(vector4 xyzt)	/	language:vex
+curlnoise(vector xyz)	/	language:vex
+curlnoise2d(float x, float y)	/	language:vex
+curlnoise2d(vector xyt)	/	language:vex
+curlxnoise(vector4 xyzt)	/	language:vex
+curlxnoise(vector xyz)	/	language:vex
+curlxnoise2d(float x, float y)	/	language:vex
+curlxnoise2d(vector xyt)	/	language:vex
+cvex_bsdf(string eval_cvex_shader, string sampler_cvex_shader, ...)	/	language:vex
+cwnoise(float position, int &seed, float &f1, float &f2)	/	language:vex
+cwnoise(float position, int &seed, float &f1, float &f2, float &f3, float &f4)	/	language:vex
+cwnoise(float position, int &seed, float &f1, float &f2, float &f4, float &f4, int period)	/	language:vex
+cwnoise(float position, int &seed, float &f1, float &f2, int peiod)	/	language:vex
+cwnoise(float posx, float posy, int &seed, float &f1, float &f2)	/	language:vex
+cwnoise(float posx, float posy, int &seed, float &f1, float &f2, float &f3, float &f4)	/	language:vex
+cwnoise(float posx, float posy, int &seed, float &f1, float &f2, float &f3, float &f4, int periodx, int periody)	/	language:vex
+cwnoise(float posx, float posy, int &seed, float &f1, float &f2, int periodx, int periody)	/	language:vex
+cwnoise(vector2 position, int &seed, float &f1, float &f2)	/	language:vex
+cwnoise(vector2 position, int &seed, float &f1, float &f2, float &f3, float &f4)	/	language:vex
+cwnoise(vector2 position, int &seed, float &f1, float &f2, float &f3, float &f4, int periodx, int periody)	/	language:vex
+cwnoise(vector2 position, int &seed, float &f1, float &f2, int periodx, int periody)	/	language:vex
+cwnoise(vector4 position, int &seed, float &f1, float &f2)	/	language:vex
+cwnoise(vector4 position, int &seed, float &f1, float &f2, float &f3, float &f4)	/	language:vex
+cwnoise(vector4 position, int &seed, float &f1, float &f2, float &f3, float &f4, int periodx, int periody, int periodz, int periodw)	/	language:vex
+cwnoise(vector4 position, int &seed, float &f1, float &f2, int periodx, int periody, int periodz, int periodw)	/	language:vex
+cwnoise(vector position, int &seed, float &f1, float &f2)	/	language:vex
+cwnoise(vector position, int &seed, float &f1, float &f2, float &f3, float &f4)	/	language:vex
+cwnoise(vector position, int &seed, float &f1, float &f2, float &f3, float &f4, int periodx, int periody, int periodz)	/	language:vex
+cwnoise(vector position, int &seed, float &f1, float &f2, int periodx, int periody, int periodx)	/	language:vex
+decode(string str)	/	language:vex
+degrees(float num_in_rads)	/	language:vex
+degrees(vector2 nums_in_rads)	/	language:vex
+degrees(vector4 nums_in_rads)	/	language:vex
+degrees(vector nums_in_rads)	/	language:vex
+depthmap(string filename, float u, float v)	/	language:vex
+depthmap(string filename, vector uvw)	/	language:vex
+depthname()	/	language:vex
+detail(<geometry>geometry, string attribute_name, int ignored=0)	/	language:vex
+detailattrib(<geometry>geometry, string attribute_name, int ignored, int &success)	/	language:vex
+detailattribsize(<geometry>geometry, string attribute_name)	/	language:vex
+detailattribtype(<geometry>geometry, string attribute_name)	/	language:vex
+detailattribtypeinfo(<geometry>geometry, string attribute_name)	/	language:vex
+detailintrinsic(<geometry>geometry, string intrinsic_name)	/	language:vex
+determinant(matrix2 m)	/	language:vex
+determinant(matrix3 m)	/	language:vex
+determinant(matrix m)	/	language:vex
+diagonalizesymmetric(matrix3 symmat, vector &diag)	/	language:vex
+diffuse(...)	/	language:vex
+diffuse(float roughness, ...)	/	language:vex
+diffuse(vector nml, ...)	/	language:vex
+diffuse(vector nml, float roughness, ...)	/	language:vex
+diffuse(vector nml, vector V, float roughness, ...)	/	language:vex
+diffuse(vector nml, vector geo_normal, ...)	/	language:vex
+diffuse(vector nml, vector geo_normal, float roughness, ...)	/	language:vex
+diffuseBRDF(vector L, vector N)	/	language:vex
+diffuseBRDF(vector L, vector N, vector V, float rough)	/	language:vex
+dihedral(vector a, vector b)	/	language:vex
+dimport(string name, <type>&out)	/	language:vex
+distance(vector2 a, vector2 b)	/	language:vex
+distance(vector4 a, vector4 b)	/	language:vex
+distance(vector a, vector b)	/	language:vex
+distance2(vector2 a, vector2 b)	/	language:vex
+distance2(vector4 a, vector4 b)	/	language:vex
+distance2(vector a, vector b)	/	language:vex
+dot(vector2 a, vector2 b)	/	language:vex
+dot(vector4 a, vector4 b)	/	language:vex
+dot(vector4 a, vector b)	/	language:vex
+dot(vector a, vector4 b)	/	language:vex
+dot(vector a, vector b)	/	language:vex
+dsmpixel(string map, string channel, int x, int y, <type>&values[])	/	language:vex
+efit(<vector>value, <vector>omin, <vector>omax, <vector>nmin, <vector>nmax)	/	language:vex
+efit(<vector>value, <vector>omin, <vector>omax, float nmin, float nmax)	/	language:vex
+efit(float value, float omin, float omax, float nmin, float nmax)	/	language:vex
+eigenvalues(int &nroot, matrix3 mat, vector &real, vector &imaginary)	/	language:vex
+encode(string str)	/	language:vex
+endswith(string haystack, string needle)	/	language:vex
+environment(string texture_filename, vector reflect_dir, ...)	/	language:vex
+environment(string texture_filename, vector reflect_dir, float filter_angle, ...)	/	language:vex
+environment(string texture_filename, vector reflect_dir0, vector reflect_dir1, vector reflect_dir2, vector reflect_dir3, ...)	/	language:vex
+erf(float v)	/	language:vex
+erf(vector2 v)	/	language:vex
+erf_inv(float v)	/	language:vex
+erfc(float v)	/	language:vex
+error(string format, ...)	/	language:vex
+eulertoquaternion(vector rotations, int order)	/	language:vex
+eval_bsdf(bsdf b, vector viewer, vector light, ...)	/	language:vex
+eval_bsdf(bsdf b, vector viewer, vector light, float &pdf, int mask, ...)	/	language:vex
+eval_bsdf(bsdf b, vector viewer, vector light, int mask, ...)	/	language:vex
+eval_bsdf(bsdf b, vector viewer, vector light, vector normal, ...)	/	language:vex
+eval_bsdf(bsdf b, vector viewer, vector light, vector normal, float &pdf, int mask, ...)	/	language:vex
+eval_bsdf(bsdf b, vector viewer, vector light, vector normal, int mask, ...)	/	language:vex
+exp(<vector>n)	/	language:vex
+exp(float n)	/	language:vex
+expand_udim(float u, float v, string path, ...)	/	language:vex
+expandedgegroup(int input, string groupname)	/	language:vex
+expandedgegroup(string filename, string groupname)	/	language:vex
+expandpointgroup(<geometry>geometry, string groupname)	/	language:vex
+expandprimgroup(<geometry>geometry, string groupname)	/	language:vex
+expandvertexgroup(<geometry>geometry, string groupname)	/	language:vex
+fastshadow(vector P, vector D, float bias, ...)	/	language:vex
+filamentsample(<geometry>geometry, vector position)	/	language:vex
+file_stat(string filename, int &stat_data[], ...)	/	language:vex
+filtershadow(vector P, vector D, float bias, ...)	/	language:vex
+filterstep(float edge, float x, ...)	/	language:vex
+filterstep(float edge, float x0, float x1, ...)	/	language:vex
+find(<type>array[], <type>target)	/	language:vex
+find(<type>array[], <type>target, int start)	/	language:vex
+find(<type>array[], <type>target, int start, int end)	/	language:vex
+find(string haystack, string needle)	/	language:vex
+find(string haystack, string needle, int start)	/	language:vex
+find(string haystack, string needle, int start, int end)	/	language:vex
+findattribval(<geometry>geometry, string attribclass, string attribute_name, int|stringvalue)	/	language:vex
+findattribval(<geometry>geometry, string attribclass, string attribute_name, int|stringvalue, int which=0)	/	language:vex
+findattribvalcount(<geometry>geometry, string attribclass, string attribute_name, int|stringvalue)	/	language:vex
+finput(float u, float v, ...)	/	language:vex
+finput(int component, float u, float v, ...)	/	language:vex
+finput(int component, int u, int v, ...)	/	language:vex
+finput(int opinput, int planeindex, float u, float v, ...)	/	language:vex
+finput(int opinput, int planeindex, int arrayindex, float u, float v, int frame, ...)	/	language:vex
+finput(int opinput, int planeindex, int arrayindex, int component, float u, float v, int frame, ...)	/	language:vex
+finput(int opinput, int planeindex, int arrayindex, int component, int u, int v, int frame, ...)	/	language:vex
+finput(int opinput, int planeindex, int arrayindex, int u, int v, int frame, ...)	/	language:vex
+finput(int opinput, int planeindex, int component, float u, float v, ...)	/	language:vex
+finput(int opinput, int planeindex, int component, int u, int v, ...)	/	language:vex
+finput(int opinput, int planeindex, int u, int v, ...)	/	language:vex
+finput(int u, int v, ...)	/	language:vex
+fit(<vector>value, <vector>omin, <vector>omax, <vector>nmin, <vector>nmax)	/	language:vex
+fit(float value, float omin, float omax, float nmin, float nmax)	/	language:vex
+fit01(<vector>value, <vector>nmin, <vector>nmax)	/	language:vex
+fit01(float value, float nmin, float nmax)	/	language:vex
+fit10(<vector>value, <vector>nmin, <vector>nmax)	/	language:vex
+fit10(float value, float nmin, float nmax)	/	language:vex
+fit11(<vector>value, <vector>nmin, <vector>nmax)	/	language:vex
+fit11(float value, float nmin, float nmax)	/	language:vex
+floor(<vector>v)	/	language:vex
+floor(float n)	/	language:vex
+flownoise(float x, float y, float flow)	/	language:vex
+flownoise(vector4 xyzt, float flow)	/	language:vex
+flownoise(vector xyz, float flow)	/	language:vex
+flowpnoise(float x, float y, int px, int py, float flow)	/	language:vex
+flowpnoise(vector4 xyzt, int px, int py, int pz, int pt, float flow)	/	language:vex
+flowpnoise(vector4 xyzt, vector4 p, float flow)	/	language:vex
+flowpnoise(vector xyz, int px, int py, int pz, float flow)	/	language:vex
+flowpnoise(vector xyz, vector p, float flow)	/	language:vex
+frac(<vector>v)	/	language:vex
+frac(float n)	/	language:vex
+fresnel(vector i, vector n, float eta, float &kr, float &kt)	/	language:vex
+fresnel(vector i, vector n, float eta, float &kr, float &kt, vector &R, vector &T)	/	language:vex
+fromNDC(string space, vector v)	/	language:vex
+fromNDC(vector v)	/	language:vex
+frontface(vector N, vector I)	/	language:vex
+frontface(vector N, vector I, vector Nref)	/	language:vex
+fuzzify(string ramp_basis[], float ramp_values[], float ramp_positions[], float crisp_value, float min_value, float max_value)	/	language:vex
+fuzzy_and(float a, float b, ...)	/	language:vex
+fuzzy_and(int a, int b, ...)	/	language:vex
+fuzzy_defuzz_centroid(float aggregated_membership[], float min_value, float max_value)	/	language:vex
+fuzzy_nand(float a, float b, ...)	/	language:vex
+fuzzy_nand(int a, int b, ...)	/	language:vex
+fuzzy_nor(float a, float b, ...)	/	language:vex
+fuzzy_nor(int a, int b, ...)	/	language:vex
+fuzzy_not(float n)	/	language:vex
+fuzzy_not(int n)	/	language:vex
+fuzzy_nxor(float a, float b, ...)	/	language:vex
+fuzzy_nxor(int a, int b, ...)	/	language:vex
+fuzzy_or(float a, float b, ...)	/	language:vex
+fuzzy_or(int a, int b, ...)	/	language:vex
+fuzzy_xor(float a, float b, ...)	/	language:vex
+fuzzy_xor(int a, int b, ...)	/	language:vex
+geoself()	/	language:vex
+geounwrap(<geometry>geometry, string unwrap_attribute)	/	language:vex
+getattrib(<geometry>geometry, string attribclass, string attribute_name, int elemnum, int &success)	/	language:vex
+getattribute(string geometry, <type>&value, string attribclass, string attribute_name, int element_number, int vertex_number)	/	language:vex
+getattribute(string geometry, <type>&value[], string attribclass, string attribute_name, int element_number, int vertex_number)	/	language:vex
+getbbox(<geometry>geometry, string primgroup, vector &min, vector &max)	/	language:vex
+getbbox(<geometry>geometry, vector &min, vector &max)	/	language:vex
+getbbox(vector &min, vector &max)	/	language:vex
+getbbox_center(<geometry>geometry)	/	language:vex
+getbbox_center(<geometry>geometry, string primgroup)	/	language:vex
+getbbox_max(<geometry>geometry)	/	language:vex
+getbbox_max(<geometry>geometry, string primgroup)	/	language:vex
+getbbox_min(<geometry>geometry)	/	language:vex
+getbbox_min(<geometry>geometry, string primgroup)	/	language:vex
+getbbox_size(<geometry>geometry)	/	language:vex
+getbbox_size(<geometry>geometry, string primgroup)	/	language:vex
+getblurP(float delta)	/	language:vex
+getbounces(bsdf b)	/	language:vex
+getbounds(string filename, string group, vector &min, vector &max)	/	language:vex
+getbounds(string filename, vector &min, vector &max)	/	language:vex
+getcomp(<matrix>m, int row, int column)	/	language:vex
+getcomp(<type>array[], int index)	/	language:vex
+getcomp(<vector>v, int index)	/	language:vex
+getcomp(string value, int index)	/	language:vex
+getcomponents()	/	language:vex
+getderiv(<vector>attr, string attrName, int isVertexAttr, float s, float t, <vector>&du, <vector>&dv, ...)	/	language:vex
+getderiv(float attr, string attrName, int isVertexAttr, float s, float t, float &du, float &dv, ...)	/	language:vex
+getfogname()	/	language:vex
+getglobalraylevel()	/	language:vex
+getgroupid()	/	language:vex
+getlight(int lid)	/	language:vex
+getlightid(string lightname)	/	language:vex
+getlightname()	/	language:vex
+getlightname(int lightid)	/	language:vex
+getlights(...)	/	language:vex
+getlights(material mat, vector P, ...)	/	language:vex
+getlights(vector P, ...)	/	language:vex
+getlightscope(material mat, string &scope, string &categories)	/	language:vex
+getlocalcurvature(float s, float t)	/	language:vex
+getmaterial()	/	language:vex
+getmaterialid()	/	language:vex
+getobjectid()	/	language:vex
+getobjectname()	/	language:vex
+getpackedtransform(int input, int primnum)	/	language:vex
+getphotonlight()	/	language:vex
+getpointbbox(<geometry>geometry, string pointgroup, vector &min, vector &max)	/	language:vex
+getpointbbox(<geometry>geometry, vector &min, vector &max)	/	language:vex
+getpointbbox_center(<geometry>geometry)	/	language:vex
+getpointbbox_center(<geometry>geometry, string pointgroup)	/	language:vex
+getpointbbox_max(<geometry>geometry)	/	language:vex
+getpointbbox_max(<geometry>geometry, string pointgroup)	/	language:vex
+getpointbbox_min(<geometry>geometry)	/	language:vex
+getpointbbox_min(<geometry>geometry, string pointgroup)	/	language:vex
+getpointbbox_size(<geometry>geometry)	/	language:vex
+getpointbbox_size(<geometry>geometry, string pointgroup)	/	language:vex
+getprimid()	/	language:vex
+getptextureid()	/	language:vex
+getraylevel()	/	language:vex
+getrayweight()	/	language:vex
+getsamplestore(string channel, vector P, float &value)	/	language:vex
+getsamplestore(string channel, vector P, int &value)	/	language:vex
+getsamplestore(string channel, vector P, vector4 &value)	/	language:vex
+getsamplestore(string channel, vector P, vector &value)	/	language:vex
+getscope(material mat, string raystyle, string &scope, string &categories)	/	language:vex
+getsmoothP(...)	/	language:vex
+getsmoothP(vector &smoothP, vector ray_origin, ...)	/	language:vex
+getspace(string fromspace, string tospace)	/	language:vex
+getuvtangents(string objName, vector P, vector dir, vector &Tu, vector &Tv)	/	language:vex
+getuvtangents(string objName, vector P, vector dir, vector &Tu, vector &Tv, vector &Tn)	/	language:vex
+gradient(float val, ...)	/	language:vex
+gradient(vector P, float val, ...)	/	language:vex
+hair(vector N, vector tip, float lobe_shift, float lobe_width_lon, ...)	/	language:vex
+hair(vector N, vector tip, float lobe_shift, float lobe_width_lon, float lobe_with_azi, ...)	/	language:vex
+hair(vector N, vector tip, float lobe_shift, float lobe_width_lon, float lobe_with_azi, float glint_shift, float glint_intensity, ...)	/	language:vex
+has_udim(string path)	/	language:vex
+hasattrib(<geometry>geometry, string attribclass, string attribute_name)	/	language:vex
+hasdetailattrib(<geometry>geometry, string attribute_name)	/	language:vex
+haslight(material mat, vector P, int light, ...)	/	language:vex
+hasmetadata(int opinput, string name)	/	language:vex
+hasplane(string planename)	/	language:vex
+haspointattrib(<geometry>geometry, string attribute_name)	/	language:vex
+hasprimattrib(<geometry>geometry, string attribute_name)	/	language:vex
+hasvertexattrib(<geometry>geometry, string attribute_name)	/	language:vex
+hedge_dstpoint(<geometry>geometry, int hedge)	/	language:vex
+hedge_dstvertex(<geometry>geometry, int hedge)	/	language:vex
+hedge_equivcount(<geometry>geometry, int hedge)	/	language:vex
+hedge_isequiv(<geometry>geometry, int hedge1, int hedge2)	/	language:vex
+hedge_isprimary(int opinput, int hendge)	/	language:vex
+hedge_isprimary(string geometry, int hedge)	/	language:vex
+hedge_isvalid(<geometry>geometry, int hedge)	/	language:vex
+hedge_next(<geometry>geometry, int hedge)	/	language:vex
+hedge_nextequiv(<geometry>geometry, int hedge)	/	language:vex
+hedge_postdstpoint(<geometry>geometry, int hedge)	/	language:vex
+hedge_postdstvertex(<geometry>geometry, int hedge)	/	language:vex
+hedge_presrcpoint(<geometry>geometry, int hedge)	/	language:vex
+hedge_presrcvertex(<geometry>geometry, int hedge)	/	language:vex
+hedge_prev(<geometry>geometry, int hedge)	/	language:vex
+hedge_prim(<geometry>geometry, int hedge)	/	language:vex
+hedge_primary(<geometry>geometry, int hedge)	/	language:vex
+hedge_srcpoint(<geometry>geometry, int hedge)	/	language:vex
+hedge_srcvertex(<geometry>geometry, int hedge)	/	language:vex
+henyeygreenstein(float anisotropic_bias, ...)	/	language:vex
+hscript_noise(vector pos)	/	language:vex
+hscript_rand(float seed)	/	language:vex
+hscript_snoise(vector pos)	/	language:vex
+hscript_sturb(vector pos, int turbulence)	/	language:vex
+hscript_turb(vector pos, int depth)	/	language:vex
+hsvtorgb(float hue, float sat, float val)	/	language:vex
+hsvtorgb(vector hsv)	/	language:vex
+iaspect(int opinput)	/	language:vex
+ichname(int inputnum, int plane_index, int component_index)	/	language:vex
+ident()	/	language:vex
+idtopoint(<geometry>geometry, int id)	/	language:vex
+idtoprim(<geometry>geometry, int id)	/	language:vex
+iend(int opinput)	/	language:vex
+iendtime(int opinput)	/	language:vex
+ihasplane(int opinput, string planename)	/	language:vex
+inedgegroup(int input, string groupname, int pointnum0, int pointnum1)	/	language:vex
+inedgegroup(string filename, string groupname, int pointnum0, int pointnum1)	/	language:vex
+inpointgroup(<geometry>geometry, string groupname, int pointnum)	/	language:vex
+inprimgroup(<geometry>geometry, string groupname, int primnum)	/	language:vex
+insert(<type>&array[], int index, <type>value)	/	language:vex
+insert(<type>&array[], int index, <type>values[])	/	language:vex
+insert(string &str, int index, string value)	/	language:vex
+instance(vector P, vector N)	/	language:vex
+instance(vector P, vector N, vector scale)	/	language:vex
+instance(vector P, vector N, vector scale, vector4 rotate, vector4 orient)	/	language:vex
+instance(vector P, vector N, vector scale, vector4 rotate, vector4 orient, vector pivot)	/	language:vex
+instance(vector P, vector N, vector scale, vector4 rotate, vector up)	/	language:vex
+instance(vector P, vector N, vector scale, vector4 rotate, vector up, vector pivot)	/	language:vex
+instance(vector P, vector N, vector scale, vector pivot)	/	language:vex
+interpolate(bsdf val, float sx, float sy)	/	language:vex
+interpolate(float val, float sx, float sy)	/	language:vex
+interpolate(vector4 val, float sx, float sy)	/	language:vex
+interpolate(vector val, float sx, float sy)	/	language:vex
+intersect(<geometry>geometry, string group, vector orig, vector dir, vector &p, vector &uvw)	/	language:vex
+intersect(<geometry>geometry, vector orig, vector dir, vector &p, float &u, float &v)	/	language:vex
+intersect(<geometry>geometry, vector orig, vector dir, vector &p, float &u, float &v, ...)	/	language:vex
+intersect(<geometry>geometry, vector orig, vector dir, vector &p, vector &uvw)	/	language:vex
+intersect_all(<geometry>geometry, string group, vector orig, vector dir, vector &pos[], int &prim[], vector &uvw[], float tol=0.01, float ttol=0.01 )	/	language:vex
+intersect_lights(int lightids[], vector pos, vector dir, float time, int &idx, float &dist, vector &clr, float &scale, ...)	/	language:vex
+inumplanes(int opinput)	/	language:vex
+invert(<matrix>m)	/	language:vex
+invertexgroup(int opinput, string groupname, int vertexnum)	/	language:vex
+invertexgroup(string filename, string groupname, int vertexnum)	/	language:vex
+iplaneindex(int opinput, string planename)	/	language:vex
+iplanename(int opinput, int planeindex)	/	language:vex
+iplanesize(int opinput, int planeindex)	/	language:vex
+irate(int opinput)	/	language:vex
+irradiance(vector P, vector N, ...)	/	language:vex
+isalpha(string str)	/	language:vex
+isbound(string variable_name)	/	language:vex
+isconnected(int opinput)	/	language:vex
+isdigit(string str)	/	language:vex
+isfinite(float x)	/	language:vex
+isfogray()	/	language:vex
+isframes()	/	language:vex
+islpeactive()	/	language:vex
+isnan(float x)	/	language:vex
+isotropic(...)	/	language:vex
+israytracing()	/	language:vex
+issamples()	/	language:vex
+isseconds()	/	language:vex
+isshadowray()	/	language:vex
+istart(int opinput)	/	language:vex
+istarttime(int opinput)	/	language:vex
+isuvrendering()	/	language:vex
+isvalidindex(<type>&array[], int index)	/	language:vex
+isvalidindex(string str, int index)	/	language:vex
+isvarying(<type>x)	/	language:vex
+isvarying(<type>x[])	/	language:vex
+itoa(int number)	/	language:vex
+ixres(int opinput)	/	language:vex
+iyres(int opinput)	/	language:vex
+join(string s[], string spacer)	/	language:vex
+kspline(string basis, float sample_pos, float value1, float key_pos1, ...)	/	language:vex
+kspline(string basis, float sample_pos, vector4 value1, float key_pos1, ...)	/	language:vex
+kspline(string basis, float sample_pos, vector value1, float key_pos1, ...)	/	language:vex
+len(<matrix>m)	/	language:vex
+len(<type>array[])	/	language:vex
+len(<vector>v)	/	language:vex
+len(string s)	/	language:vex
+length(float f)	/	language:vex
+length(vector2 v)	/	language:vex
+length(vector4 v)	/	language:vex
+length(vector v)	/	language:vex
+length2(vector2 v)	/	language:vex
+length2(vector4 v)	/	language:vex
+length2(vector v)	/	language:vex
+lerp(<vector>value1, <vector>value2, <vector>amount)	/	language:vex
+lerp(<vector>value1, <vector>value2, float amount)	/	language:vex
+lerp(bsdf bsdf1, bsdf bsdf2, float amount)	/	language:vex
+lerp(float value1, float value2, float amount)	/	language:vex
+lightbounces(light lp)	/	language:vex
+lightid(light lp)	/	language:vex
+limit_sample_space(float maxu, float u)	/	language:vex
+limit_sample_space(float minu, float maxu, float u)	/	language:vex
+limport(string name, <type>&value)	/	language:vex
+lkspline(float sample_pos, float value1, float key_pos1, ...)	/	language:vex
+lkspline(float sample_pos, vector4 value1, float key_pos1, ...)	/	language:vex
+lkspline(float sample_pos, vector value1, float key_pos1, ...)	/	language:vex
+log(<vector>v)	/	language:vex
+log(float n)	/	language:vex
+log10(<vector>n)	/	language:vex
+log10(float n)	/	language:vex
+lookat(vector from, vector to)	/	language:vex
+lookat(vector from, vector to, float roll)	/	language:vex
+lookat(vector from, vector to, float roll, int xyz)	/	language:vex
+lookat(vector from, vector to, vector up)	/	language:vex
+lookat(vector from, vector to, vector up, int xyz)	/	language:vex
+lspline(float sample_pos, float value1, ...)	/	language:vex
+lspline(float sample_pos, vector4 value1, ...)	/	language:vex
+lspline(float sample_pos, vector value1, ...)	/	language:vex
+lstrip(string value)	/	language:vex
+lstrip(string value, string whitespace)	/	language:vex
+luminance(float r, float g, float b)	/	language:vex
+luminance(vector4 rgb)	/	language:vex
+luminance(vector rgb)	/	language:vex
+lumname()	/	language:vex
+makebasis(vector &xaxis, vector &yaxis, vector zaxis)	/	language:vex
+makebasis(vector &xaxis, vector &yaxis, vector zaxis, vector u)	/	language:vex
+maketransform(int trs, int xyz, vector t, vector r, vector s)	/	language:vex
+maketransform(int trs, int xyz, vector t, vector r, vector s, vector p)	/	language:vex
+maketransform(int trs, int xyz, vector t, vector r, vector s, vector p, vector pr)	/	language:vex
+maketransform(int trs, int xyz, vector t, vector r, vector s, vector p, vector pr, vector shears)	/	language:vex
+maketransform(int xyz, vector angles)	/	language:vex
+maketransform(vector zaxis, vector yaxis)	/	language:vex
+maketransform(vector zaxis, vector yaxis, vector translate)	/	language:vex
+mask_bsdf(bsdf b, int mask)	/	language:vex
+maskname()	/	language:vex
+match(string pattern, string subject)	/	language:vex
+matchvex_blinn(float exponent, ...)	/	language:vex
+matchvex_blinn(vector nml, float exponent, ...)	/	language:vex
+matchvex_specular(float exponent, ...)	/	language:vex
+matchvex_specular(vector nml, float exponent, ...)	/	language:vex
+mattrib(string name, vector P)	/	language:vex
+max(<type>value)	/	language:vex
+max(<type>values[])	/	language:vex
+max(<vector>value1, <vector>value2, ...)	/	language:vex
+max(<vector>values)	/	language:vex
+max(float value1, float value2, ...)	/	language:vex
+max(int value1, int value2, ...)	/	language:vex
+mdensity(vector P)	/	language:vex
+metadata(int opinput, string name)	/	language:vex
+metadata(int opinput, string name, int index)	/	language:vex
+metaimport(int handle, string attrib, vector P, <type>&value)	/	language:vex
+metaimport(string file, string attribute, vector P)	/	language:vex
+metamarch(int &index, string filename, vector &p0, vector &p1, float displace_bound)	/	language:vex
+metanext(int handle)	/	language:vex
+metastart(string filename, vector p)	/	language:vex
+metaweight(string filename, vector p)	/	language:vex
+min(<type>value)	/	language:vex
+min(<type>values[])	/	language:vex
+min(<vector>v)	/	language:vex
+min(<vector>value1, <vector>value2, ...)	/	language:vex
+min(float value1, float value2, ...)	/	language:vex
+min(int value1, int value2, ...)	/	language:vex
+minpos(<geometry>geometry, string primgroup, vector point)	/	language:vex
+minpos(<geometry>geometry, string primgroup, vector point, float maxdist)	/	language:vex
+minpos(<geometry>geometry, vector point)	/	language:vex
+minpos(<geometry>geometry, vector point, float maxdist)	/	language:vex
+mspace(vector P)	/	language:vex
+mwnoise(float position, int &seed, float &f1, float &f2)	/	language:vex
+mwnoise(float position, int &seed, float &f1, float &f2, float &f3, float &f4)	/	language:vex
+mwnoise(float position, int &seed, float &f1, float &f2, float &f4, float &f4, int period)	/	language:vex
+mwnoise(float position, int &seed, float &f1, float &f2, int peiod)	/	language:vex
+mwnoise(float posx, float posy, int &seed, float &f1, float &f2)	/	language:vex
+mwnoise(float posx, float posy, int &seed, float &f1, float &f2, float &f3, float &f4)	/	language:vex
+mwnoise(float posx, float posy, int &seed, float &f1, float &f2, float &f3, float &f4, int periodx, int periody)	/	language:vex
+mwnoise(float posx, float posy, int &seed, float &f1, float &f2, int periodx, int periody)	/	language:vex
+mwnoise(vector2 position, int &seed, float &f1, float &f2)	/	language:vex
+mwnoise(vector2 position, int &seed, float &f1, float &f2, float &f3, float &f4)	/	language:vex
+mwnoise(vector2 position, int &seed, float &f1, float &f2, float &f3, float &f4, int periodx, int periody)	/	language:vex
+mwnoise(vector2 position, int &seed, float &f1, float &f2, int periodx, int periody)	/	language:vex
+mwnoise(vector4 position, int &seed, float &f1, float &f2)	/	language:vex
+mwnoise(vector4 position, int &seed, float &f1, float &f2, float &f3, float &f4)	/	language:vex
+mwnoise(vector4 position, int &seed, float &f1, float &f2, float &f3, float &f4, int periodx, int periody, int periodz, int periodw)	/	language:vex
+mwnoise(vector4 position, int &seed, float &f1, float &f2, int periodx, int periody, int periodz, int periodw)	/	language:vex
+mwnoise(vector position, int &seed, float &f1, float &f2)	/	language:vex
+mwnoise(vector position, int &seed, float &f1, float &f2, float &f3, float &f4)	/	language:vex
+mwnoise(vector position, int &seed, float &f1, float &f2, float &f3, float &f4, int periodx, int periody, int periodz)	/	language:vex
+mwnoise(vector position, int &seed, float &f1, float &f2, int periodx, int periody, int periodx)	/	language:vex
+nametopoint(<geometry>geometry, string name)	/	language:vex
+nametoprim(<geometry>geometry, string name)	/	language:vex
+nbouncetypes()	/	language:vex
+nearpoint(<geometry>geometry, string ptgroup, vector pt)	/	language:vex
+nearpoint(<geometry>geometry, string ptgroup, vector pt, float maxdist)	/	language:vex
+nearpoint(<geometry>geometry, vector pt)	/	language:vex
+nearpoint(<geometry>geometry, vector pt, float maxdist)	/	language:vex
+nearpoints(<geometry>geometry, string ptgroup, vector pt, float maxdist)	/	language:vex
+nearpoints(<geometry>geometry, string ptgroup, vector pt, float maxdist, int maxpts)	/	language:vex
+nearpoints(<geometry>geometry, vector pt, float maxdist)	/	language:vex
+nearpoints(<geometry>geometry, vector pt, float maxdist, int maxpts)	/	language:vex
+nedgesgroup(int input, string groupname)	/	language:vex
+nedgesgroup(string filename, string groupname)	/	language:vex
+neighbour(<geometry>geometry, int point_num, int neighbour_num)	/	language:vex
+neighbourcount(<geometry>geometry, int point_num)	/	language:vex
+neighbours(<geometry>geometry, int ptnum)	/	language:vex
+newsampler(...)	/	language:vex
+newsampler(int seed, ...)	/	language:vex
+nextsample(int &sid, float &sx, float &sy, ...)	/	language:vex
+nextsample(int &sid, vector &svec, ...)	/	language:vex
+ninput(int opinput, int plane, int component, int array_index, float u, float v, int frame, ...)	/	language:vex
+ninput(int opinput, int plane, int component, int array_index, int u, int v, int frame, ...)	/	language:vex
+ninputs()	/	language:vex
+noise(float pos)	/	language:vex
+noise(float posx, float posy)	/	language:vex
+noise(vector4 pos)	/	language:vex
+noise(vector pos)	/	language:vex
+noised(float x, float &v, float &dvdx)	/	language:vex
+noised(float x, float y, float &v, float &dvdx, float &dvdy)	/	language:vex
+noised(float x, float y, vector &v, vector &dvdx, vector &dvdy)	/	language:vex
+noised(float x, vector &v, vector &dvdx)	/	language:vex
+noised(vector4 xyzw, float &v, float &dvdx, float &dvdy, float &dvdz, float &dvdw)	/	language:vex
+noised(vector4 xyzw, vector &v, vector &dvdx, vector &dvdy, vector &dvdz, vector &dvdw)	/	language:vex
+noised(vector xyz, float &v, float &dvdx, float &dvdy, float &dvdz)	/	language:vex
+noised(vector xyz, vector &v, vector &dvdx, vector &dvdy, vector &dvdz)	/	language:vex
+normal_bsdf(bsdf b)	/	language:vex
+normalize(<vector>v)	/	language:vex
+normalname()	/	language:vex
+npoints(<geometry>geometry)	/	language:vex
+npointsgroup(<geometry>geometry, string groupname)	/	language:vex
+nprimitives(<geometry>geometry)	/	language:vex
+nprimitivesgroup(<geometry>geometry, string groupname)	/	language:vex
+nrandom(...)	/	language:vex
+nrandom(float &x, float &y, ...)	/	language:vex
+ntransform(string fromspace, string tospace, vector v)	/	language:vex
+ntransform(string tospace, vector v)	/	language:vex
+ntransform(vector v, matrix transform)	/	language:vex
+nuniqueval(<geometry>geometry, string attribclass, string attribute_name)	/	language:vex
+nvertices(<geometry>geometry)	/	language:vex
+nverticesgroup(<geometry>geometry, string groupname)	/	language:vex
+occlusion(float &coverage, vector &missed_direction, vector P, vector N, ...)	/	language:vex
+occlusion(vector P, vector N, ...)	/	language:vex
+ocean_sample(string geometry, int phase, int frequency, int amplitude, float hscale, float time, int mode, int downsample, vector pos)	/	language:vex
+ocio_activedisplays()	/	language:vex
+ocio_activeviews()	/	language:vex
+ocio_import(string space, string property, int &value)	/	language:vex
+ocio_import(string space, string property, string &value)	/	language:vex
+ocio_import(string space, string property, vector &value)	/	language:vex
+ocio_roles()	/	language:vex
+ocio_spaces()	/	language:vex
+ocio_transform(string dest, vector4 clr)	/	language:vex
+ocio_transform(string dest, vector clr)	/	language:vex
+ocio_transform(string src, string dest, string looks, vector4 clr)	/	language:vex
+ocio_transform(string src, string dest, string looks, vector clr)	/	language:vex
+ocio_transform(string src, string dest, vector4 clr)	/	language:vex
+ocio_transform(string src, string dest, vector clr)	/	language:vex
+onoise(vector pos)	/	language:vex
+onoise(vector pos, int periodX, int periodY, int periodZ)	/	language:vex
+onoise(vector pos, int periodX, int periodY, int periodZ, int turbulence, float rough, float atten)	/	language:vex
+onoise(vector pos, int turbulence, float rough, float atten)	/	language:vex
+opdigits()	/	language:vex
+opdigits(string str)	/	language:vex
+opend(int handle)	/	language:vex
+opfullpath(string relative_path)	/	language:vex
+opid(int op_id)	/	language:vex
+opid(string op_path)	/	language:vex
+opparentbonetransform(string path)	/	language:vex
+opparentbonetransform(string path, float time)	/	language:vex
+opparenttransform(string path)	/	language:vex
+opparenttransform(string path, float time)	/	language:vex
+opparmtransform(string path)	/	language:vex
+opparmtransform(string path, float time)	/	language:vex
+oppreconstrainttransform(string path)	/	language:vex
+oppreconstrainttransform(string path, float time)	/	language:vex
+oppretransform(string path)	/	language:vex
+oppretransform(string path, float time)	/	language:vex
+opstart(string message)	/	language:vex
+optransform(int op_id)	/	language:vex
+optransform(string path)	/	language:vex
+optransform(string path, float time)	/	language:vex
+ord(string value)	/	language:vex
+orthographic(float zoom, float orthowidth, float image_aspect, float pixel_aspect, float clip_near, float clip_far)	/	language:vex
+orthographic(float zoom, float orthowidth, float image_aspect, float pixel_aspect, float clip_near, float clip_far, vector4 window)	/	language:vex
+osd_facecount(<geometry>geometry)	/	language:vex
+osd_firstpatch(<geometry>geometry, int face_id)	/	language:vex
+osd_limitsurface(<geometry>geometry, string attrib_name, int patch_id, float u, float v, <type>&result)	/	language:vex
+osd_limitsurface(<geometry>geometry, string attrib_name, int patch_id, float u, float v, float &result[])	/	language:vex
+osd_limitsurfacevertex(<geometry>geometry, string attrib_name, int face_id, float u, float v, <type>&result)	/	language:vex
+osd_limitsurfacevertex(<geometry>geometry, string attrib_name, int face_id, float u, float v, float &result[])	/	language:vex
+osd_lookupface(<geometry>geometry, int patch_id, float patch_u, float patch_v, int &face_id, float &face_u, float &face_v)	/	language:vex
+osd_lookupface(<geometry>geometry, int patch_id, float patch_u, float patch_v, int &face_id, float &face_u, float &face_v, string attribute)	/	language:vex
+osd_lookuppatch(<geometry>geometry, int face_id, float face_u, float face_v, int &patch_id, float &patch_u, float &patch_v)	/	language:vex
+osd_lookuppatch(<geometry>geometry, int face_id, float face_u, float face_v, int &patch_id, float &patch_u, float &patch_v, string attribute)	/	language:vex
+osd_patchcount(<geometry>geometry)	/	language:vex
+osd_patchcount(<geometry>geometry, int face_id)	/	language:vex
+osd_patches(<geometry>geometry, int face_id)	/	language:vex
+outerproduct(vector2 v, vector2 v)	/	language:vex
+outerproduct(vector4 v, vector4 v)	/	language:vex
+outerproduct(vector v, vector v)	/	language:vex
+ow_nspace(vector v)	/	language:vex
+ow_space()	/	language:vex
+ow_space(vector4 v)	/	language:vex
+ow_space(vector v)	/	language:vex
+ow_vspace(vector v)	/	language:vex
+pack_inttosafefloat(int i)	/	language:vex
+packedtransform(int input, int primnum, matrix transform)	/	language:vex
+pathtrace(vector P, vector N, ...)	/	language:vex
+pcclose(int &handle)	/	language:vex
+pcconvex(int handle, string channel, vector N)	/	language:vex
+pcexport(int handle, string channel_name, <type>value, ...)	/	language:vex
+pcexport(int handle, string channel_name, vector value, float radius, ...)	/	language:vex
+pcfarthest(int handle)	/	language:vex
+pcfilter(int handle, string channel_name, ...)	/	language:vex
+pcfind(<geometry>geometry, string Pchannel, vector P, float radius, int maxpoints)	/	language:vex
+pcfind(<geometry>geometry, string ptgroup, string Pchannel, vector P, float radius, int maxpoints)	/	language:vex
+pcfind_radius(<geometry>geometry, string Pchannel, string RadChannel, float radscale, vector P, float radius, int maxpoints)	/	language:vex
+pcfind_radius(<geometry>geometry, string ptgroup, string Pchannel, string RadChannel, float radscale, vector P, float radius, int maxpoints)	/	language:vex
+pcgenerate(string filename, int npoints)	/	language:vex
+pcimport(int handle, string channel_name, <type>&value)	/	language:vex
+pcimportbyidx3(int handle, string channel_name, int idx)	/	language:vex
+pcimportbyidx4(int handle, string channel_name, int idx)	/	language:vex
+pcimportbyidxf(int handle, string channel_name, int idx)	/	language:vex
+pcimportbyidxi(int handle, string channel_name, int idx)	/	language:vex
+pcimportbyidxp(int handle, string channel_name, int idx)	/	language:vex
+pcimportbyidxs(int handle, string channel_name, int idx)	/	language:vex
+pcimportbyidxv(int handle, string channel_name, int idx)	/	language:vex
+pciterate(int handle)	/	language:vex
+pcnumfound(int handle)	/	language:vex
+pcopen(int opinput, string Pchannel, vector P, float radius, int maxpoints)	/	language:vex
+pcopen(string filename, string Pchannel, vector P, float radius, int maxpoints, ...)	/	language:vex
+pcopen(string filename, string Pchannel, vector P, string Nchannel, vector N, float radius, int maxpoints, ...)	/	language:vex
+pcopen(string filename, string channel, int shaded, ...)	/	language:vex
+pcopenlod(string filename, string Pchannel, vector P, int min_pts, ...)	/	language:vex
+pcsampleleaf(int handle, float sample)	/	language:vex
+pcsize(int handle)	/	language:vex
+pcunshaded(int handle, string channel_name)	/	language:vex
+pcwrite(string filename, ...)	/	language:vex
+perspective(float zoom, float image_aspect, float pixel_aspect, float clip_near, float clip_far)	/	language:vex
+perspective(float zoom, float image_aspect, float pixel_aspect, float clip_near, float clip_far, vector4 window)	/	language:vex
+pgfind(<geometry>geometry, string ptgroup, vector P, float radius, int maxpoints, float divsize)	/	language:vex
+pgfind(<geometry>geometry, vector P, float radius, int maxpoints, float divsize)	/	language:vex
+phong(float exponent, ...)	/	language:vex
+phong(vector nml, float exponent, ...)	/	language:vex
+phong(vector nml, vector V, float shinyness, ...)	/	language:vex
+phongBRDF(vector L, vector N, vector V, float rough)	/	language:vex
+phonglobe(vector dir, float exponent, ...)	/	language:vex
+phonglobe(vector dir, float exponentx, float exponenty, vector framex, vector framey, ...)	/	language:vex
+phonglobe(vector nml, vector dir, float exponent, ...)	/	language:vex
+phonglobe(vector nml, vector dir, float exponentx, float exponenty, vector framex, vector framey, ...)	/	language:vex
+photonmap(string mapname, vector position, vector normal, ...)	/	language:vex
+photonmap(string mapname, vector position, vector normal, vector &color, float &area, ...)	/	language:vex
+planeindex(string planename)	/	language:vex
+planename(int planeindex)	/	language:vex
+planepointdistance(vector plane_pos, vector plane_normal, vector point_pos, vector &intersect_pos)	/	language:vex
+planesize(int planeindex)	/	language:vex
+planesphereintersect(vector plane_pos, vector plane_normal, vector sphere_pos, float sphere_radius, vector &intersect_pos, float &intersect_radius, float &intersect_distance)	/	language:vex
+pluralize(string noun)	/	language:vex
+pnoise(float x, float y, int px, int py)	/	language:vex
+pnoise(float x, int px)	/	language:vex
+pnoise(vector4 xyzt, int px, int py, int pz, int pt)	/	language:vex
+pnoise(vector4 xyzt, vector4 p)	/	language:vex
+pnoise(vector x, vector p)	/	language:vex
+pnoise(vector xyz, int px, int py, int pz)	/	language:vex
+point(<geometry>geometry, string attribute_name, int pointnumber)	/	language:vex
+pointattrib(<geometry>geometry, string attribute_name, int pointnumber, int &success)	/	language:vex
+pointattribsize(<geometry>geometry, string attribute_name)	/	language:vex
+pointattribtype(<geometry>geometry, string attribute_name)	/	language:vex
+pointattribtypeinfo(<geometry>geometry, string attribute_name)	/	language:vex
+pointedge(<geometry>geometry, int point1, int point2)	/	language:vex
+pointhedge(<geometry>geometry, int point)	/	language:vex
+pointhedge(<geometry>geometry, int srcpoint, int dstpoint)	/	language:vex
+pointhedgenext(<geometry>geometry, int hedge)	/	language:vex
+pointname()	/	language:vex
+pointprims(<geometry>geometry, int ptnum)	/	language:vex
+pointvertex(<geometry>geometry, int point_num)	/	language:vex
+pointvertices(<geometry>geometry, int ptnum)	/	language:vex
+polardecomp(matrix3 transform)	/	language:vex
+polyneighbours(<geometry>geometry, int primnum)	/	language:vex
+pop(<type>&array[])	/	language:vex
+pop(<type>&array[], int index)	/	language:vex
+pow(<vector>v, float exponent)	/	language:vex
+pow(float n, float exponent)	/	language:vex
+predicate_incircle(vector2 a, vector2 b, vector2 c, vector2 d)	/	language:vex
+predicate_insphere(vector a, vector b, vector c, vector d, vector e)	/	language:vex
+predicate_orient2d(vector2 a, vector2 b, vector2 c)	/	language:vex
+predicate_orient3d(vector a, vector b, vector c, vector d)	/	language:vex
+prerotate(matrix3 &m, float amount, vector axis)	/	language:vex
+prerotate(matrix3 &m, vector angles, int xyz)	/	language:vex
+prerotate(matrix &m, float amount, vector axis)	/	language:vex
+prerotate(matrix &m, vector angles, int xyz)	/	language:vex
+prescale(matrix3 &m, vector scale_vector)	/	language:vex
+prescale(matrix &m, vector scale_vector)	/	language:vex
+pretranslate(matrix &m, vector amount)	/	language:vex
+prim(<geometry>geometry, string attribute_name, int primnumber)	/	language:vex
+prim_attribute(string geometry, <type>&value, string attribute_name, int prim_number, float u, float v)	/	language:vex
+prim_attribute(string geometry, <type>&value, string attribute_name, int prim_number, vector uvw)	/	language:vex
+prim_attribute(string geometry, <type>&value[], string attribute_name, int prim_number, float u, float v)	/	language:vex
+prim_attribute(string geometry, <type>&value[], string attribute_name, int prim_number, vector uvw)	/	language:vex
+prim_normal(<geometry>geometry, int prim_number, float u, float v)	/	language:vex
+prim_normal(<geometry>geometry, int prim_number, float u, float v, float w)	/	language:vex
+prim_normal(<geometry>geometry, int prim_number, vector uvw)	/	language:vex
+primarclen(string geometry, vector2 uv1, vector2 uv2, int prim_num)	/	language:vex
+primarclen(string geometry, vector2 uv1, vector2 uv2, int prim_num, int divs)	/	language:vex
+primattrib(<geometry>geometry, string attribute_name, int prim, int &success)	/	language:vex
+primattribsize(<geometry>geometry, string attribute_name)	/	language:vex
+primattribtype(<geometry>geometry, string attribute_name)	/	language:vex
+primattribtypeinfo(<geometry>geometry, string attribute_name)	/	language:vex
+primduv(string geometry, int prim_number, vector2 uv, int du, int dv)	/	language:vex
+primfind(<geometry>geometry, string group, vector min, vector max)	/	language:vex
+primfind(<geometry>geometry, vector min, vector max)	/	language:vex
+primhedge(<geometry>geometry, int prim)	/	language:vex
+primintrinsic(<geometry>geometry, string intrinsic_name, int prim_num)	/	language:vex
+primpoint(<geometry>geometry, int primnum, int vertex)	/	language:vex
+primpoints(<geometry>geometry, int primnum)	/	language:vex
+primuv(<geometry>geometry, string attribute_name, int prim_num, vector uvw)	/	language:vex
+primuvconvert(string filename, vector2 uv, int prim_num, int mode)	/	language:vex
+primuvconvert(string filename, vector2 uv, int prim_num, int mode, float tolerance)	/	language:vex
+primvertex(<geometry>geometry, int primnum, int vertex)	/	language:vex
+primvertexcount(<geometry>geometry, int prim_num)	/	language:vex
+primvertices(<geometry>geometry, int primnum)	/	language:vex
+print_once(string msg, ...)	/	language:vex
+printf(string format, ...)	/	language:vex
+product(<vector>arr[])	/	language:vex
+product(float arr[])	/	language:vex
+product(float n)	/	language:vex
+product(int arr[])	/	language:vex
+product(int n)	/	language:vex
+product(vector2 v)	/	language:vex
+product(vector4 v)	/	language:vex
+product(vector v)	/	language:vex
+ptexture(string map, int face_id, ...)	/	language:vex
+ptexture(string map, int face_id, float s, float t, ...)	/	language:vex
+ptlined(vector P0, vector P1, vector Q)	/	language:vex
+ptransform(string fromspace, string tospace, vector vec)	/	language:vex
+ptransform(string tospace, vector vec)	/	language:vex
+ptransform(vector4 vec, matrix transform)	/	language:vex
+ptransform(vector vec, matrix transform)	/	language:vex
+push(<type>&array[], <type>value)	/	language:vex
+push(<type>&array[], <type>values[])	/	language:vex
+pxnoise(float x, float y, int xp, int yp)	/	language:vex
+pxnoise(float x, int xp)	/	language:vex
+pxnoise(vector4 xyzt, int xp, int yp, int zp, int wp)	/	language:vex
+pxnoise(vector xyz, int xp, int yp, int zp)	/	language:vex
+pxnoised(float x, float y, int px, int py, float &v, float &dvdx, float &dvdy)	/	language:vex
+pxnoised(float x, float y, int px, int py, vector &v, vector &dvdx, vector &dvdy)	/	language:vex
+pxnoised(float x, int px, float &v, float &dvdx)	/	language:vex
+pxnoised(float x, int px, vector &v, vector &dvdx)	/	language:vex
+pxnoised(vector4 xyzw, int px, int py, int pz, int pw, float &v, float &dvdx, float &dvdy, float &dvdz, float &dvdw)	/	language:vex
+pxnoised(vector4 xyzw, int px, int py, int pz, int pw, vector &v, vector &dvdx, vector &dvdy, vector &dvdz, vector &dvdw)	/	language:vex
+pxnoised(vector xyz, int px, int py, int pz, float &v, float &dvdx, float &dvdy, float &dvdz)	/	language:vex
+pxnoised(vector xyz, int px, int py, int pz, vector &v, vector &dvdx, vector &dvdy, vector &dvdz)	/	language:vex
+qconvert(vector4 quaternion)	/	language:vex
+qdistance(vector4 q1, vector4 q2)	/	language:vex
+qinvert(vector4 quaternion)	/	language:vex
+qmultiply(vector4 q1, vector4 q2)	/	language:vex
+qrotate(vector4 quaternion, vector v)	/	language:vex
+quaternion(float angle, vector axis)	/	language:vex
+quaternion(matrix3 rotations)	/	language:vex
+quaternion(vector angleaxis)	/	language:vex
+quaterniontoeuler(vector4 orient, int order)	/	language:vex
+radians(<vector>nums_in_degs)	/	language:vex
+radians(float num_in_degs)	/	language:vex
+rand(float seed)	/	language:vex
+rand(float seed, float seed2)	/	language:vex
+rand(vector2 seed)	/	language:vex
+rand(vector4 seed)	/	language:vex
+rand(vector seed)	/	language:vex
+random(float|intposition)	/	language:vex
+random(float|intxpos, float|intypos)	/	language:vex
+random(int position)	/	language:vex
+random(vector4 position)	/	language:vex
+random(vector position)	/	language:vex
+random_fhash(float seed)	/	language:vex
+random_fhash(float seed, float seed2)	/	language:vex
+random_fhash(vector2 seed)	/	language:vex
+random_fhash(vector4 seed)	/	language:vex
+random_fhash(vector seed)	/	language:vex
+random_ihash(int seed)	/	language:vex
+random_poisson(int seed, float mean)	/	language:vex
+random_poisson(int seed, float mean, int minvalue, int maxvalue)	/	language:vex
+random_shash(string seed)	/	language:vex
+random_sobol(float seed, int offset)	/	language:vex
+random_sobol(int seed, int offset)	/	language:vex
+random_sobol(vector4 seed, int offset)	/	language:vex
+random_sobol(vector seed, int offset)	/	language:vex
+rawcolormap(string filename, float u, float v, ...)	/	language:vex
+rawcolormap(string filename, float u0, float v0, float u1, float v1, float u2, float v2, float u3, float v3, int samples, ...)	/	language:vex
+rawcolormap(string filename, vector uv, vector du, vector dv, int samples, ...)	/	language:vex
+rawcolormap(string filename, vector uv0, vector uv1, vector uv2, vector uv3, ...)	/	language:vex
+rawcolormap(string filename, vector uv0, vector uv1, vector uv2, vector uv3, int samples, ...)	/	language:vex
+rawcolormap(string filename, vector uvw, ...)	/	language:vex
+rayhittest(vector P, vector D, float bias, ...)	/	language:vex
+rayhittest(vector P, vector D, vector &pHit, vector &nHit, float bias, ...)	/	language:vex
+rayimport(string name, <type>&value)	/	language:vex
+re_find(int &start_pos[], int &end_pos[], string regex, string input)	/	language:vex
+re_find(int &start_pos[], int &end_pos[], string regex, string input, int start)	/	language:vex
+re_find(int &start_pos[], int &end_pos[], string regex, string input, int start, int end)	/	language:vex
+re_find(string regex, string input)	/	language:vex
+re_find(string regex, string input, int start)	/	language:vex
+re_find(string regex, string input, int start, int end)	/	language:vex
+re_findall(string regex, string input)	/	language:vex
+re_findall(string regex, string input, int start)	/	language:vex
+re_findall(string regex, string input, int start, int end)	/	language:vex
+re_match(string regex, string input)	/	language:vex
+re_replace(string regex, string replacement, string input, int maxreplace=0)	/	language:vex
+re_split(string regex, string input, int maxsplits=0)	/	language:vex
+reflect(vector direction, vector normal)	/	language:vex
+reflectlight(float bias, float max_contrib, ...)	/	language:vex
+reflectlight(vector P, vector D, float bias, float max_contrib, ...)	/	language:vex
+reflectlight(vector P, vector N, vector I, float bias, float max_contrib, ...)	/	language:vex
+refract(vector direction, vector normal, float index)	/	language:vex
+refractlight(vector &cf, vector &of, float &af, vector P, vector D, float bias, float max_contrib, ...)	/	language:vex
+refractlight(vector &cf, vector &of, float &af, vector P, vector N, vector I, float eta, float bias, float max_contrib, ...)	/	language:vex
+relativepath(string src, string dest)	/	language:vex
+relbbox(<geometry>geometry, string primgroup, vector position)	/	language:vex
+relbbox(<geometry>geometry, vector position)	/	language:vex
+relbbox(vector position)	/	language:vex
+relpointbbox(<geometry>geometry, string pointgroup, vector position)	/	language:vex
+relpointbbox(<geometry>geometry, vector position)	/	language:vex
+removeindex(<type>&array[], int index)	/	language:vex
+removepoint(int geohandle, int point_number)	/	language:vex
+removepoint(int geohandle, int point_number, int and_prims)	/	language:vex
+removeprim(int geohandle, int prim_number, int andpoints)	/	language:vex
+removevalue(<type>&array[], <type>value)	/	language:vex
+renderstate(material mat, string query, <type>&value)	/	language:vex
+renderstate(string query, <type>&value)	/	language:vex
+reorder(<type>values[], int indices[])	/	language:vex
+reorder(string value, int indices[])	/	language:vex
+resample_linear(float input[], int new_length)	/	language:vex
+resample_linear(vector2 input[], int new_length)	/	language:vex
+resample_linear(vector4 input[], int new_length)	/	language:vex
+resample_linear(vector input[], int new_length)	/	language:vex
+resize(<type>&array[], int size)	/	language:vex
+resolvemissedray(vector dir, float time, int mask, ...)	/	language:vex
+reverse(<type>values[])	/	language:vex
+reverse(string str)	/	language:vex
+rgbtohsv(float h, float s, float v)	/	language:vex
+rgbtohsv(vector hsv)	/	language:vex
+rgbtoxyz(vector rgb)	/	language:vex
+rint(<vector>v)	/	language:vex
+rint(float n)	/	language:vex
+rotate(matrix2 &m, float amount)	/	language:vex
+rotate(matrix3 &m, float amount, vector axis)	/	language:vex
+rotate(matrix3 &m, vector angles, int xyz)	/	language:vex
+rotate(matrix &m, float amount, vector axis)	/	language:vex
+rotate(matrix &m, vector angles, int xyz)	/	language:vex
+rotate_x_to(vector2 direction, vector2 v)	/	language:vex
+rotate_x_to(vector4 direction, vector4 v)	/	language:vex
+rotate_x_to(vector direction, vector v)	/	language:vex
+rstrip(string value)	/	language:vex
+rstrip(string value, string whitespace)	/	language:vex
+sample_bsdf(bsdf F, vector viewer_u, vector &dir, vector &eval, float &pdf, int &type, float sx, float sy, ...)	/	language:vex
+sample_bsdf(bsdf F, vector viewer_u, vector &dir, vector &eval, float &pdf, int &type, float sx, float sy, int mask, ...)	/	language:vex
+sample_bsdf(bsdf F, vector viewer_u, vector &dir, vector &eval, int &type, float sx, float sy, ...)	/	language:vex
+sample_bsdf(bsdf F, vector viewer_u, vector &dir, vector &eval, int &type, float sx, float sy, int mask, ...)	/	language:vex
+sample_bsdf(bsdf b, vector viewer_u, vector normal_v, int &flags, vector &dir, vector &eval, float &pdf, int &type, float sx, float sy, int mask, ...)	/	language:vex
+sample_cauchy(<vector>u)	/	language:vex
+sample_cauchy(float origscale, float minvalue, float maxvalue, float u)	/	language:vex
+sample_cauchy(float scale, float u)	/	language:vex
+sample_cauchy(float scale, vector2 u)	/	language:vex
+sample_cauchy(float u)	/	language:vex
+sample_cdf(float cdf[], float uniform_rand)	/	language:vex
+sample_cdf(float cdf[], float uniform_rand, int &index, float &x)	/	language:vex
+sample_cdf(float cdf[], float uniform_rand, int &index, float &x, float &pdf)	/	language:vex
+sample_circle_arc(vector2 center, float maxangle, float u)	/	language:vex
+sample_circle_edge_uniform(float u)	/	language:vex
+sample_circle_ring_uniform(vector2 u, float alpha)	/	language:vex
+sample_circle_slice(vector2 center, float maxangle, vector2 u)	/	language:vex
+sample_circle_uniform(vector2 u)	/	language:vex
+sample_direction_cone(vector center, float maxangle, vector2 u)	/	language:vex
+sample_direction_uniform(vector2 u)	/	language:vex
+sample_discrete(float weights[], float u)	/	language:vex
+sample_discrete(int nvalues, float u)	/	language:vex
+sample_exponential(float mean, float u)	/	language:vex
+sample_exponential(float origmean, float maxvalue, float u)	/	language:vex
+sample_exponential(float u)	/	language:vex
+sample_geometry(vector origin, vector sample, float time, ...)	/	language:vex
+sample_hemisphere(float bias, vector2 u)	/	language:vex
+sample_hemisphere(vector2 u)	/	language:vex
+sample_hemisphere(vector center, float bias, vector2 u)	/	language:vex
+sample_hemisphere(vector center, vector2 u)	/	language:vex
+sample_hypersphere_cone(vector4 center, float maxangle, vector4 u)	/	language:vex
+sample_hypersphere_uniform(vector4 u)	/	language:vex
+sample_light(int lightid, vector pos, vector sam, float time, vector &pos, vector &clr, float &scale, ...)	/	language:vex
+sample_lognormal(float mu, float sigma, float minvalue, float maxvalue, float u)	/	language:vex
+sample_lognormal(float mu, float sigma, float u)	/	language:vex
+sample_lognormal_by_median(float median, float stddev, float u)	/	language:vex
+sample_lognormal_by_median(float origmedian, float origstddev, float minvalue, float maxvalue, float u)	/	language:vex
+sample_normal(float mean, float stddev, float u)	/	language:vex
+sample_normal(float origmean, float origstddev, float minvalue, float maxvalue, float u)	/	language:vex
+sample_normal(float u)	/	language:vex
+sample_normal(vector2 u)	/	language:vex
+sample_normal(vector4 u)	/	language:vex
+sample_normal(vector u)	/	language:vex
+sample_orientation_cone(vector4 center, float maxangle, vector u)	/	language:vex
+sample_orientation_uniform(vector u)	/	language:vex
+sample_photon(light lp, vector &pos, vector &dir, float &scale, float time)	/	language:vex
+sample_sphere_cone(vector center, float maxangle, vector u)	/	language:vex
+sample_sphere_shell_uniform(vector u, float alpha)	/	language:vex
+sample_sphere_uniform(vector u)	/	language:vex
+sampledisk(float &x, float &y, float sx, float sy)	/	language:vex
+scale(matrix2 &m, vector2 scale_vector)	/	language:vex
+scale(matrix3 &m, vector scale_vector)	/	language:vex
+scale(matrix &m, vector scale_vector)	/	language:vex
+scatter(vector ipoint, vector inormal, vector idirection, vector idistribution, float time, float maxdist, vector &opoint, vector &onormal, vector &odirection)	/	language:vex
+select(int conditional, <type>a, <type>b)	/	language:vex
+select(int conditional, <type>a[], <type>b[])	/	language:vex
+sensor_panorama_create(float time, vector pos, int size, float near, float far, string candidateobj, string includeobj, string excludeobj, int uselit)	/	language:vex
+sensor_panorama_getcolor(int handle, vector dir)	/	language:vex
+sensor_panorama_getcone(int handle, vector lookodir, float angle, vector colormin, vector colormax, float depthmin, float depthmax, float &strength, vector &dir, vector &color, float &depth)	/	language:vex
+sensor_panorama_getdepth(int handle, vector dir)	/	language:vex
+sensor_save(int handle, string colorfile, string depthfile)	/	language:vex
+serialize(<matrix>matrices[])	/	language:vex
+serialize(<vector>vectors[])	/	language:vex
+set(<matrix>m)	/	language:vex
+set(<type>v)	/	language:vex
+set(<type>v[])	/	language:vex
+set(<vector>v)	/	language:vex
+set(float|intv)	/	language:vex
+set(float num)	/	language:vex
+set(float nums[])	/	language:vex
+set(float v)	/	language:vex
+set(float v1, float v2)	/	language:vex
+set(float v1, float v2, float v3)	/	language:vex
+set(float v1, float v2, float v3, float v4)	/	language:vex
+set(float v1, float v2, float v3, float v4, float v5, float v6, float v7, float v8, float v9, float v10, float v11, float v12, float v13, float v14, float v15, float v16)	/	language:vex
+set(float v1, float v2, float v4, float v4, float v5, float v6, float v7, float v8, float v9)	/	language:vex
+set(float vs[])	/	language:vex
+set(int v)	/	language:vex
+set(int vs[])	/	language:vex
+set(matrix2 m)	/	language:vex
+set(matrix3 m)	/	language:vex
+set(matrix m)	/	language:vex
+set(vector2 row1, vector2 row2)	/	language:vex
+set(vector2 v)	/	language:vex
+set(vector4 row1, vector4 row2, vector4 row3, vector4 row4)	/	language:vex
+set(vector4 rows[])	/	language:vex
+set(vector4 v)	/	language:vex
+set(vector row1, vector row2, vector row3)	/	language:vex
+set(vector rows[])	/	language:vex
+set(vector v)	/	language:vex
+setagentclipnames(int geohandle, int prim, string clipnames[])	/	language:vex
+setagentclips(int geohandle, int prim, string clip_names[], float clip_times[], float clip_weights[], string clip_transform_groups[], int clip_layer_ids[], int layer_blend_modes[], float layer_weights[], int layer_parent_ids[])	/	language:vex
+setagentcliptimes(int geohandle, int prim, float cliptimes[])	/	language:vex
+setagentclipweights(int geohandle, int prim, float clipweights[])	/	language:vex
+setagentcollisionlayer(int geohandle, int prim, string layername)	/	language:vex
+setagentcurrentlayer(int geohandle, int prim, string layername)	/	language:vex
+setagentlocaltransform(int geohandle, int prim, matrix transform, int index)	/	language:vex
+setagentlocaltransforms(int geohandle, int prim, matrix transforms[])	/	language:vex
+setagentworldtransform(int geohandle, int prim, matrix transform, int index)	/	language:vex
+setagentworldtransforms(int geohandle, int prim, matrix transforms[])	/	language:vex
+setattrib(int geohandle, string attribclass, string attribute_name, int element_num, int vertex_num, <type>value, string mode="set")	/	language:vex
+setattrib(int geohandle, string attribclass, string attribute_name, int element_num, int vertex_num, <type>value[], string mode="set")	/	language:vex
+setattribtypeinfo(int geohandle, string attribclass, string name, string typeinfo)	/	language:vex
+setcomp(<matrix>&target, float value, int row, int column)	/	language:vex
+setcomp(<type>&array[], <type>value, int index)	/	language:vex
+setcomp(<vector>&target, float value, int index)	/	language:vex
+setcurrentlight(int lightid)	/	language:vex
+setdetailattrib(int geohandle, string name, <type>value, string mode="set")	/	language:vex
+setdetailattrib(int geohandle, string name, <type>value[], string mode="set")	/	language:vex
+setedgegroup(int geohandle, string name, int pt0, int pt1, int value)	/	language:vex
+setpackedtransform(int input, int primnum, matrix transform)	/	language:vex
+setpointattrib(int geohandle, string name, int point_num, <type>value, string mode="set")	/	language:vex
+setpointattrib(int geohandle, string name, int point_num, <type>value[], string mode="set")	/	language:vex
+setpointgroup(int geohandle, string name, int point_num, int value, string mode="set")	/	language:vex
+setprimattrib(int geohandle, string name, int prim_num, <type>value, string mode="set")	/	language:vex
+setprimattrib(int geohandle, string name, int prim_num, <type>value[], string mode="set")	/	language:vex
+setprimgroup(int geohandle, string name, int prim_num, int value, string mode="set")	/	language:vex
+setprimintrinsic(int geohandle, string name, int prim_num, <type>value, string mode="set")	/	language:vex
+setprimintrinsic(int geohandle, string name, int prim_num, <type>value[], string mode="set")	/	language:vex
+setprimvertex(int geohandle, int prim, int vtxofprim, int pt)	/	language:vex
+setsamplestore(string channel, vector P, float value)	/	language:vex
+setsamplestore(string channel, vector P, int value)	/	language:vex
+setsamplestore(string channel, vector P, vector4 value)	/	language:vex
+setsamplestore(string channel, vector P, vector value)	/	language:vex
+setvertexattrib(int geohandle, string name, int prim_num, int vertex_num, <type>value, string mode="set")	/	language:vex
+setvertexattrib(int geohandle, string name, int prim_num, int vertex_num, <type>value[], string mode="set")	/	language:vex
+setvertexgroup(int geohandle, string name, int prim_num, int vertex_num, int value, string mode="set")	/	language:vex
+setvertexpoint(int geohandle, int prim, int vtxofprim, int pt)	/	language:vex
+shadow(vector &Cl)	/	language:vex
+shadow(vector &Cl, vector P, vector L)	/	language:vex
+shadow(vector Cl)	/	language:vex
+shadow(vector Cl, vector P, vector L)	/	language:vex
+shadow_light(int lightid, vector pos, vector dir, float time, ...)	/	language:vex
+shadowmap(string filename, vector Pndc, float spread, float bias, float quality, ...)	/	language:vex
+shadowmap(string filename, vector Pndc1, vector Pndc2, vector Pndc3, vector Pndc4, float spread, float bias, float quality, ...)	/	language:vex
+shimport(string variable_name, <type>&value)	/	language:vex
+shl(int a, int bits)	/	language:vex
+shr(int a, int bits)	/	language:vex
+shrz(int a, int bits)	/	language:vex
+sign(float n)	/	language:vex
+sign(int n)	/	language:vex
+sign(vector2 v)	/	language:vex
+sign(vector4 v)	/	language:vex
+sign(vector v)	/	language:vex
+simport(string name, <type>&value)	/	language:vex
+sin(<vector>n)	/	language:vex
+sin(float n)	/	language:vex
+sinh(float n)	/	language:vex
+sinh(vector2 v)	/	language:vex
+sinh(vector4 v)	/	language:vex
+sinh(vector v)	/	language:vex
+sleep(int milliseconds)	/	language:vex
+slerp(vector4 q1, vector4 q2, float bias)	/	language:vex
+slerp(vector4 qs[], float weights[])	/	language:vex
+slice(<type>array[], int hasstart, int start, int hasend, int end, int hasstep, int step)	/	language:vex
+slice(<type>s[], int start, int end)	/	language:vex
+slice(<type>s[], int start, int end, int step)	/	language:vex
+slice(string s, int hasstart, int start, int hasend, int end, int hasstep, int step)	/	language:vex
+slice(string s, int start, int end)	/	language:vex
+slice(string s, int start, int end, int step)	/	language:vex
+slideframe(vector x0, vector t0, vector n0, vector x1, vector t1)	/	language:vex
+smooth(float value1, float value2, float amount)	/	language:vex
+smooth(float value1, float value2, float amount, float rolloff)	/	language:vex
+smoothrotation(int order, vector r, vector r_reference)	/	language:vex
+snoise(vector pos)	/	language:vex
+snoise(vector pos, int periodX, int periodY, int periodZ)	/	language:vex
+snoise(vector pos, int periodX, int periodY, int periodZ, int turbulence, float rough, float atten)	/	language:vex
+snoise(vector pos, int turbulence, float rough, float atten)	/	language:vex
+solid_angle(bsdf b, int mask)	/	language:vex
+solveconstraint(float lengths[], vector targetpos, float tolerance, matrix relmat, vector constraints[])	/	language:vex
+solvecubic(float a, float b, float c, float d, float &t1, float &t2, float &t3)	/	language:vex
+solvecubic(float a, float b, float c, float d, vector2 &t1, vector2 &t2, vector2 &t3)	/	language:vex
+solvecurve(float lengths[], int closed, int orienttonormal, vector tangent, vector points[], vector normals[])	/	language:vex
+solvecurve(string op, float lengths[], int closed, int orienttonormal, vector tangent, int normalcalcmethod, matrix relmat)	/	language:vex
+solvefbik(matrix xforms[], int parents[], int targets[], matrix targetxforms[], int iters)	/	language:vex
+solvefbik(matrix xforms[], int parents[], int targets[], matrix targetxforms[], int iters, float tolerance, int pinroot)	/	language:vex
+solvefbik(matrix xforms[], int parents[], int targets[], matrix targetxforms[], int iters, float tolerance, int pinroot, float targetweights[], int targetpriorities[], int targetdepths[])	/	language:vex
+solvefbik(matrix xforms[], int parents[], int targets[], matrix targetxforms[], int iters, float tolerance, int pinroot, float targetweights[], int targetpriorities[], int targetdepths[], matrix goalxforms[], vector4 constrainedxforms[], vector jointlimits[])	/	language:vex
+solveik(float lengths[], vector targetpos, vector twistpos, float twist, int twistflag, float dampen, int resiststraight, float trackingthres, matrix relmat, vector constraints[])	/	language:vex
+solvepoly(float coef[], float &roots[], int maxiter=0)	/	language:vex
+solvequadratic(float a, float b, float c, float &t1, float &t2)	/	language:vex
+solvequadratic(float a, float b, float c, vector2 &t1, vector2 &t2)	/	language:vex
+sort(float values[])	/	language:vex
+sort(int values[])	/	language:vex
+sort(string values[])	/	language:vex
+specular(vector dir, ...)	/	language:vex
+specular(vector nml, vector V, float roughness, ...)	/	language:vex
+specularBRDF(vector L, vector N, vector V, float rough)	/	language:vex
+spline(string bases[], float sample_pos, float values[], ...)	/	language:vex
+spline(string bases[], float sample_pos, float values[], float positions[], ...)	/	language:vex
+spline(string bases[], float sample_pos, vector4 values[], ...)	/	language:vex
+spline(string bases[], float sample_pos, vector4 values[], float positions[], ...)	/	language:vex
+spline(string bases[], float sample_pos, vector values[], ...)	/	language:vex
+spline(string bases[], float sample_pos, vector values[], float positions[], ...)	/	language:vex
+spline(string basis, float sample_pos, float value1, ...)	/	language:vex
+spline(string basis, float sample_pos, float values[], ...)	/	language:vex
+spline(string basis, float sample_pos, vector4 value1, ...)	/	language:vex
+spline(string basis, float sample_pos, vector4 values[], ...)	/	language:vex
+spline(string basis, float sample_pos, vector value1, ...)	/	language:vex
+spline(string basis, float sample_pos, vector values[], ...)	/	language:vex
+split(string s)	/	language:vex
+split(string s, string separators)	/	language:vex
+split(string s, string separators, int maxsplits)	/	language:vex
+split_bsdf(bsdf &lobes[], bsdf source, float &weights[])	/	language:vex
+split_bsdf(bsdf &lobes[], bsdf source, float &weights[], int mask)	/	language:vex
+split_bsdf(bsdf &lobes[], bsdf source, float &weights[], int mask, int type)	/	language:vex
+split_bsdf(bsdf &lobes[], bsdf source, float &weights[], int mask, int type, float u)	/	language:vex
+split_bsdf(bsdf &lobes[], bsdf source, float &weights[], int mask, int type, float u, float cdf[])	/	language:vex
+splitpath(string fullpath, string &dir, string &name)	/	language:vex
+sprintf(string format, ...)	/	language:vex
+sqrt(<vector>value)	/	language:vex
+sqrt(float value)	/	language:vex
+sssapprox(vector albedo, float meanFreePath, float roughness, float scale, ...)	/	language:vex
+startswith(string str, string startswith)	/	language:vex
+storelightexport(string lightname, string exportname, <type>value)	/	language:vex
+storelightexport(string lightname, string exportname, <type>value[])	/	language:vex
+strip(string value)	/	language:vex
+strip(string value, string whitespace)	/	language:vex
+strlen(string string)	/	language:vex
+sum(<vector>arr[])	/	language:vex
+sum(<vector>v)	/	language:vex
+sum(float n)	/	language:vex
+sum(float nums[])	/	language:vex
+sum(int n)	/	language:vex
+sum(int nums[])	/	language:vex
+surfacedist(<geometry>geometry, string ptgroup, string P_attribute, int search_pt, float max_radius, int &closest_pt, string distance_metric)	/	language:vex
+switch(bsdf direct, bsdf indirect)	/	language:vex
+swizzle(vector2 v, int i0, int i1)	/	language:vex
+swizzle(vector4 v, int i0, int i1, int i2, int i3)	/	language:vex
+swizzle(vector v, int i0, int i1, int i2)	/	language:vex
+tan(float n)	/	language:vex
+tan(vector2 v)	/	language:vex
+tan(vector4 v)	/	language:vex
+tan(vector v)	/	language:vex
+tanh(float n)	/	language:vex
+tanh(vector2 n)	/	language:vex
+tanh(vector4 n)	/	language:vex
+tanh(vector n)	/	language:vex
+tet_adjacent(<geometry>geometry, int primindex, int faceno)	/	language:vex
+tet_faceindex(int faceno, int vtxno)	/	language:vex
+teximport(string map, string attribute, <type>&value)	/	language:vex
+teximport(string map, string token, int|string&values[])	/	language:vex
+texprintf(float u, float v, string format, ...)	/	language:vex
+texture(string map, ...)	/	language:vex
+texture(string map, float s0, float t0, float s1, float t1, float s2, float t2, float s3, float t3, ...)	/	language:vex
+texture(string map, float ss, float tt, ...)	/	language:vex
+texture3d(string filename, string channel, vector P, ...)	/	language:vex
+texture3dBox(string filename, string channel, vector &min, vector &max, ...)	/	language:vex
+titlecase(string str)	/	language:vex
+toNDC(string camera_name, vector point)	/	language:vex
+toNDC(vector point)	/	language:vex
+tolower(string str)	/	language:vex
+toupper(string str)	/	language:vex
+trace(vector &cv, vector &of, float &af, vector P, vector D, float shadow_bias, float max_contrib, ...)	/	language:vex
+trace(vector pos, vector dir, float time, ...)	/	language:vex
+translate(matrix &m, vector4 amount)	/	language:vex
+translate(matrix &m, vector amount)	/	language:vex
+translucent(vector nml, vector ng, ...)	/	language:vex
+transpose(<matrix>&m)	/	language:vex
+transpose(<matrix>m)	/	language:vex
+trunc(float x)	/	language:vex
+trunc(vector2 x)	/	language:vex
+trunc(vector4 x)	/	language:vex
+trunc(vector x)	/	language:vex
+tw_nspace(vector v)	/	language:vex
+tw_space()	/	language:vex
+tw_space(vector4 v)	/	language:vex
+tw_space(vector v)	/	language:vex
+tw_vspace(vector v)	/	language:vex
+uniqueval(<geometry>geometry, string attribclass, string attribute_name, int which)	/	language:vex
+uniquevals(<geometry>geometry, string attribclass, string attribute_name)	/	language:vex
+unpack_intfromsafefloat(float f)	/	language:vex
+unserialize(float values[])	/	language:vex
+upush(<type>&array[], <type>value)	/	language:vex
+uvdist(<geometry>geometry, string primgroup, string uvname, vector uv, int &prim, vector &primuv)	/	language:vex
+uvdist(<geometry>geometry, string primgroup, string uvname, vector uv, int &prim, vector &primuv, float maxdist)	/	language:vex
+uvdist(<geometry>geometry, string uvname, vector uv, int &prim, vector &primuv)	/	language:vex
+uvdist(<geometry>geometry, string uvname, vector uv, int &prim, vector &primuv, float maxdist)	/	language:vex
+uvintersect(<geometry>geometry, string primgroup, string uvname, vector orig, vector dir, vector &pos, vector &primuv)	/	language:vex
+uvintersect(<geometry>geometry, string uvname, vector orig, vector dir, vector &pos, vector &primuv)	/	language:vex
+uvsample(<geometry>geometry, string attr_name, string uv_attr_name, vector uvw)	/	language:vex
+uvsample(<geometry>geometry, string primgroup, string attr_name, string uv_attr_name, vector uvw)	/	language:vex
+uvunwrap(string object_path, float u, float v, float time, vector &P, vector &I)	/	language:vex
+uvunwrap(string object_path, float u, float v, float time, vector &P, vector &I, vector &mikkelsenUtan, vector &mikkelsenVtan)	/	language:vex
+variance(float variable, float &mean, int &sample_size)	/	language:vex
+velocityname()	/	language:vex
+vertex(<geometry>geometry, string attribute_name, int linear_vertex_index)	/	language:vex
+vertex(<geometry>geometry, string attribute_name, int prim_num, int vertex_num)	/	language:vex
+vertexattrib(<geometry>geometry, string attribute_name, int linear_vertex_index, int &success)	/	language:vex
+vertexattribsize(<geometry>geometry, string attribute_name)	/	language:vex
+vertexattribtype(<geometry>geometry, string attribute_name)	/	language:vex
+vertexattribtypeinfo(<geometry>geometry, string attribute_name)	/	language:vex
+vertexhedge(<geometry>geometry, int vertex)	/	language:vex
+vertexindex(<geometry>geometry, int primnum, int vertex)	/	language:vex
+vertexnext(<geometry>geometry, int linearvertex)	/	language:vex
+vertexpoint(<geometry>geometry, int linearvertex)	/	language:vex
+vertexprev(<geometry>geometry, int linearvertex)	/	language:vex
+vertexprim(<geometry>geometry, int linearvertex)	/	language:vex
+vertexprimindex(<geometry>geometry, int linearindex)	/	language:vex
+vnoise(float position, float jitter, int &seed, float &f1, float &f2, float &pos1, float &pos2)	/	language:vex
+vnoise(float position, float jitter, int &seed, float &f1, float &f2, float &pos1, float &pos2, int period)	/	language:vex
+vnoise(float posx, float posy, float jittx, float jitty, int &seed, float &f1, float &f2, float &pos1x, float &pos1y, float &pos2x, float &pos2, int periodx, int periody)	/	language:vex
+vnoise(float posx, float posy, float jittx, float jitty, int &seed, float &f1, float &f2, float &pos1x, float &pos1y, float &pos2x, float &pos2y)	/	language:vex
+vnoise(vector4 position, vector4 jitter, int &seed, float &f1, float &f2, vector4 &pos1, vector4 &pos2)	/	language:vex
+vnoise(vector4 position, vector4 jitter, int &seed, float &f1, float &f2, vector4 &pos1, vector4 &pos2, int periodx, int periody, int periodz, int periodw)	/	language:vex
+vnoise(vector4 position, vector4 jitter, int &seed, float &f1, float &f2, vector4 &pos1, vector4 &pos2, vector4 period)	/	language:vex
+vnoise(vector position, vector jitter, int &seed, float &f1, float &f2, vector &pos1, vector &pos2)	/	language:vex
+vnoise(vector position, vector jitter, int &seed, float &f1, float &f2, vector &pos1, vector &pos2, int periodx, int periody, int periodz)	/	language:vex
+vnoise(vector position, vector jitter, int &seed, float &f1, float &f2, vector &pos1, vector &pos2, vector period)	/	language:vex
+volume(vector pos, ...)	/	language:vex
+volumegradient(<geometry>geometry, int primnum, vector pos)	/	language:vex
+volumegradient(<geometry>geometry, string volumename, vector pos)	/	language:vex
+volumeindex(<geometry>geometry, int primnum, vector voxel)	/	language:vex
+volumeindex(<geometry>geometry, string volumename, vector voxel)	/	language:vex
+volumeindexactive(<geometry>geometry, int primnum, vector voxel)	/	language:vex
+volumeindexactive(<geometry>geometry, string volumename, vector voxel)	/	language:vex
+volumeindexorigin(<geometry>geometry, int primnum)	/	language:vex
+volumeindexorigin(<geometry>geometry, string volumename)	/	language:vex
+volumeindextopos(<geometry>geometry, int primnum, vector voxel)	/	language:vex
+volumeindextopos(<geometry>geometry, string volumename, vector voxel)	/	language:vex
+volumeindexv(<geometry>geometry, int primnum, vector voxel)	/	language:vex
+volumeindexv(<geometry>geometry, string volumename, vector voxel)	/	language:vex
+volumepostoindex(<geometry>geometry, int primnum, vector position)	/	language:vex
+volumepostoindex(<geometry>geometry, string volumename, vector position)	/	language:vex
+volumeres(<geometry>geometry, int primnum)	/	language:vex
+volumeres(<geometry>geometry, string volumename)	/	language:vex
+volumesample(<geometry>geometry, int primnum, vector pos)	/	language:vex
+volumesample(<geometry>geometry, string volumename, vector pos)	/	language:vex
+volumesamplev(<geometry>geometry, int primnum, vector pos)	/	language:vex
+volumesamplev(<geometry>geometry, string volumename, vector pos)	/	language:vex
+volumevoxeldiameter(<geometry>geometry, int primnum)	/	language:vex
+volumevoxeldiameter(<geometry>geometry, string primname)	/	language:vex
+vtransform(string fromspace, string tospace, vector v)	/	language:vex
+vtransform(string tospace, vector v)	/	language:vex
+vtransform(vector v, matrix transform)	/	language:vex
+warning(string format, ...)	/	language:vex
+wireblinn(vector tangent, float exponent, ...)	/	language:vex
+wirediffuse(vector tangent, ...)	/	language:vex
+wnoise(float position, int &seed, float &f1, float &f2)	/	language:vex
+wnoise(float position, int &seed, float &f1, float &f2, float &f3, float &f4)	/	language:vex
+wnoise(float position, int &seed, float &f1, float &f2, float &f4, float &f4, int period)	/	language:vex
+wnoise(float position, int &seed, float &f1, float &f2, int peiod)	/	language:vex
+wnoise(float posx, float posy, int &seed, float &f1, float &f2)	/	language:vex
+wnoise(float posx, float posy, int &seed, float &f1, float &f2, float &f3, float &f4)	/	language:vex
+wnoise(float posx, float posy, int &seed, float &f1, float &f2, float &f3, float &f4, int periodx, int periody)	/	language:vex
+wnoise(float posx, float posy, int &seed, float &f1, float &f2, int periodx, int periody)	/	language:vex
+wnoise(vector2 position, int &seed, float &f1, float &f2)	/	language:vex
+wnoise(vector2 position, int &seed, float &f1, float &f2, float &f3, float &f4)	/	language:vex
+wnoise(vector2 position, int &seed, float &f1, float &f2, float &f3, float &f4, int periodx, int periody)	/	language:vex
+wnoise(vector2 position, int &seed, float &f1, float &f2, int periodx, int periody)	/	language:vex
+wnoise(vector4 position, int &seed, float &f1, float &f2)	/	language:vex
+wnoise(vector4 position, int &seed, float &f1, float &f2, float &f3, float &f4)	/	language:vex
+wnoise(vector4 position, int &seed, float &f1, float &f2, float &f3, float &f4, int periodx, int periody, int periodz, int periodw)	/	language:vex
+wnoise(vector4 position, int &seed, float &f1, float &f2, int periodx, int periody, int periodz, int periodw)	/	language:vex
+wnoise(vector position, int &seed, float &f1, float &f2)	/	language:vex
+wnoise(vector position, int &seed, float &f1, float &f2, float &f3, float &f4)	/	language:vex
+wnoise(vector position, int &seed, float &f1, float &f2, float &f3, float &f4, int periodx, int periody, int periodz)	/	language:vex
+wnoise(vector position, int &seed, float &f1, float &f2, int periodx, int periody, int periodx)	/	language:vex
+wo_nspace(vector v)	/	language:vex
+wo_space()	/	language:vex
+wo_space(vector4 pos)	/	language:vex
+wo_space(vector pos)	/	language:vex
+wo_vspace(vector v)	/	language:vex
+writepixel(string channel, float ndc_x, float ndc_y, vector clr)	/	language:vex
+wt_nspace(vector v)	/	language:vex
+wt_space()	/	language:vex
+wt_space(vector4 v)	/	language:vex
+wt_space(vector v)	/	language:vex
+wt_vspace(vector v)	/	language:vex
+xnoise(float x)	/	language:vex
+xnoise(float x, float y)	/	language:vex
+xnoise(vector4 xyzt)	/	language:vex
+xnoise(vector xyz)	/	language:vex
+xnoised(float x, float &v, float &dvdx)	/	language:vex
+xnoised(float x, float y, float &v, float &dvdx, float &dvdy)	/	language:vex
+xnoised(float x, float y, vector &v, vector &dvdx, vector &dvdy)	/	language:vex
+xnoised(float x, vector &v, vector &dvdx)	/	language:vex
+xnoised(vector4 xyzw, float &v, float &dvdx, float &dvdy, float &dvdz, float &dvdw)	/	language:vex
+xnoised(vector4 xyzw, vector &v, vector &dvdx, vector &dvdy, vector &dvdz, vector &dvdw)	/	language:vex
+xnoised(vector xyz, float &v, float &dvdx, float &dvdy, float &dvdz)	/	language:vex
+xnoised(vector xyz, vector &v, vector &dvdx, vector &dvdy, vector &dvdz)	/	language:vex
+xyzdist(<geometry>geometry, string primgroup, vector origin)	/	language:vex
+xyzdist(<geometry>geometry, string primgroup, vector origin, int &prim, vector &uv)	/	language:vex
+xyzdist(<geometry>geometry, string primgroup, vector origin, int &prim, vector &uv, float maxdist)	/	language:vex
+xyzdist(<geometry>geometry, vector origin)	/	language:vex
+xyzdist(<geometry>geometry, vector origin, int &prim, vector &uv)	/	language:vex
+xyzdist(<geometry>geometry, vector origin, int &prim, vector &uv, float maxdist)	/	language:vex
+xyztorgb(vector xyz)	/	language:vex
