@@ -11,41 +11,14 @@ import vim
 _FUNCTION_NAME = re.compile('(?P<name>\w+)\((?P<arguments>.+)\)')
 
 
-# Reference: https://stackoverflow.com/a/29992065/3626104
-def _find_parens(s):
-    toret = {}
-    pstack = []
-
-    for i, c in enumerate(s):
-        if c == '(':
-            pstack.append(i)
-        elif c == ')':
-            if len(pstack) == 0:
-                raise IndexError("No matching closing parens at: " + str(i))
-            toret[i] = pstack.pop()
-
-    if len(pstack) > 0:
-        raise IndexError("No matching opening parens at: " + str(pstack.pop()))
-
-    return toret
-
-
-def clear_nearest_function():
+def clear(characters):
     row, column = vim.current.window.cursor
     row -= 1
-
-    parentheses = _find_parens(vim.current.buffer[row])
-    # If the completion is a function, the cursor position when the
-    # function is completed will always be a ). So we can query the
-    # matching ( using that column index
-    #
-    end = column - 1
-    start = parentheses[end]
-
+    start = column - characters
     vim.current.buffer[row] = vim.current.buffer[row][:start] \
-        + vim.current.buffer[row][end + 1:]
+        + vim.current.buffer[row][column:]
 
-    vim.current.window.cursor = (row + 1, start - 3)
+    vim.current.window.cursor = (row + 1, start)
 
 
 def get_argument_tabstops(arguments):
@@ -69,7 +42,8 @@ def get_signature_breakdown(signature):
     if not match:
         return ''
 
-    return [argument.strip() for argument in match.group('arguments').split(',')]
+    arguments = [argument.strip() for argument in match.group('arguments').split(',')]
+    return match.group('name'), arguments
 
 
 def get_snippet(details):
@@ -78,6 +52,6 @@ def get_snippet(details):
     if not completion:
         return ''
 
-    arguments = get_signature_breakdown(completion)
+    caller, arguments = get_signature_breakdown(completion)
     tabstops = get_argument_tabstops(arguments)
-    return '({tabstops})'.format(tabstops=', '.join(tabstops))
+    return '{caller}({tabstops})'.format(caller=caller, tabstops=', '.join(tabstops))

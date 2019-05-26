@@ -2,16 +2,17 @@ function! ExpandVexSignature(completion)
 pythonx << EOF
 from vim_vex_autocomplete import autocomplete
 from UltiSnips import snippet_manager
+import vim
 
 completion = vim.eval('a:completion')
 text = autocomplete.get_snippet(completion)
 
 if text:
-    autocomplete.clear_nearest_function()
+    autocomplete.clear(len(completion['word']))
     snippet_manager.UltiSnips_Manager.expand_anon(text)
+    vim.command('redraw!')
 EOF
 endfunction
-
 
 autocmd! CompleteDone *.vex :call ExpandVexSignature(v:completed_item)
 
