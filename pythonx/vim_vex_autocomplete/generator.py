@@ -1,24 +1,55 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-# IMPORT THIRD-PARTY LIBRARIES
+"""A module that is designed to create the ctags file for this plugin.
+
+You can run this module at any time to generate new VEX function completions.
+
+Requires:
+    >>> pip install BeautifulSoup4
+
+Example:
+    python generator.py
+
+"""
+
+# IMPORT STANDARD LIBRARIES
+import argparse
+import logging
 import urllib2
+import sys
+import os
+
+# IMPORT THIRD-PARTY LIBRARIES
 import bs4
 
 
 _ROOT_URL = 'http://www.sidefx.com/docs/houdini/vex/functions'
 
+_CURRENT_DIR = os.path.dirname(os.path.realpath(__file__))
+_CTAGS_FOLDER = os.path.dirname(os.path.dirname(_CURRENT_DIR))
+OUTPUT_FILE = os.path.join(_CTAGS_FOLDER, 'ctags', 'vex-tags')
+
+LOGGER = logging.getLogger(__name__)
+_HANDLER = logging.StreamHandler(sys.stdout)
+_HANDLER.setLevel(logging.DEBUG)
+_FORMATTER = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+_HANDLER.setFormatter(_FORMATTER)
+LOGGER.addHandler(_HANDLER)
+
 
 def _get_page(url):
+    """`bs4.BeautifulSoup` or NoneType: Create a parse-able object for the given URL."""
     try:
         page = urllib2.urlopen(url)
     except Exception:
-        print('Could not load url "{url}"'.format(url=url))
+        LOGGER.exception('Could not load url "%s".', url)
         return None
     return bs4.BeautifulSoup(page, 'html.parser')
 
 
-def get_all_function_pages():
+def iter_all_function_pages():
+    """`bs4.BeautifulSoup`: Find every function page of Houdini VEX documentation."""
     page = urllib2.urlopen(_ROOT_URL)
     soup = bs4.BeautifulSoup(page, 'html.parser')
 
@@ -31,7 +62,8 @@ def get_all_function_pages():
             yield function_page
 
 
-def get_all_page_signatures(page):
+def iter_all_page_signatures(page):
+    """str: Find every signature of every page of Houdini VEX documentation."""
     def _extract_class(signature, class_name):
         unwanted = signature.find('span', {'class': class_name})
         if not unwanted:
@@ -51,16 +83,49 @@ def get_all_page_signatures(page):
             pass
 
 
-def main():
+def write_signatures():
+    """Parse Houdini's VEX command documentation and save all found functions."""
     signatures = []
-    for page in get_all_function_pages():
-        for signature in get_all_page_signatures(page):
+    for page in iter_all_function_pages():
+        for signature in iter_all_page_signatures(page):
             signatures.append('{signature}\t/\tlanguage:vex'.format(signature=signature))
-            print(signature)
+            LOGGER.debug('Found signature "%s".', signature)
 
-    print('finished getting signatures')
-    with open('/tmp/signatures.tags', 'w') as handler:
-        handler.write('\n'.join(signatures))
+    LOGGER.info('Finished getting signatures')
+
+    with open(OUTPUT_FILE, 'w') as handler:
+        handler.write('\n'.join(sorted(signatures)))
+
+
+def main():
+    """Run this module and save all found VEX functions."""
+    parser = argparse.ArgumentParser(
+        description='Run this file to regenerate Houdini VEX function ctags',
+    )
+
+    parser.add_argument(
+        '-v',
+        '--verbose',
+        action='count',
+        help='If enabled, log messages will be printed. Repeat for more detailed messages.',
+    )
+
+    arguments = parser.parse_args()
+
+    verbosity = arguments.verbose
+    if verbosity == 1:
+        verbosity = logging.INFO
+    elif verbosity > 1:
+        verbosity = logging.DEBUG
+    else:
+        verbosity = logging.CRITICAL + 1
+
+    LOGGER.setLevel(verbosity)
+    LOGGER.info('Starting to get signatures.')
+
+    write_signatures()
+
+    LOGGER.info('Signatures found.')
 
 
 if __name__ == '__main__':
