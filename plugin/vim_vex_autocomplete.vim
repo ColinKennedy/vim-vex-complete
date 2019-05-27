@@ -16,7 +16,7 @@ if text:
 EOF
 endfunction
 
-autocmd! CompleteDone *.vex :call s:ExpandVexSignature(v:completed_item)
+autocmd! CompleteDone *.vex,*.vfl :call s:ExpandVexSignature(v:completed_item)
 
 " Add the tags file so that it shows up in Vim's tag-completion menu
 let s:current_directory = expand('<sfile>:p:h')

@@ -3,7 +3,7 @@
 A Vim plugin that auto-completes functions for VEX (SideFX Houdini's scripting language). 
 
 ## Demo
-![Demo](https://user-images.githubusercontent.com/10103049/58389190-1054be80-7fdd-11e9-869b-ea5d8635e3bd.gif)
+![demo](https://user-images.githubusercontent.com/10103049/58392599-9974f100-7fef-11e9-8a3c-52a2b5902aec.gif)
 
 
 ## How To Use
