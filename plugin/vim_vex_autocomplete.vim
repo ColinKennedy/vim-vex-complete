@@ -1,3 +1,7 @@
+if get(g:, 'vim_vex_autocomplete_loaded', '0') == '1'
+    finish
+endif
+
 " A function that converts completed VEX functions into automatic UltiSnips snippets
 function! s:ExpandVexSignature(completion)
 pythonx << EOF
@@ -16,8 +20,13 @@ if text:
 EOF
 endfunction
 
-autocmd! CompleteDone *.vex,*.vfl :call s:ExpandVexSignature(v:completed_item)
+" Reference: If Ultisnips is installed https://github.com/SirVer/ultisnips
+if &rtp =~ 'ultisnips'
+    autocmd! CompleteDone *.vex,*.vfl :call s:ExpandVexSignature(v:completed_item)
+endif
 
 " Add the tags file so that it shows up in Vim's tag-completion menu
 let s:current_directory = expand('<sfile>:p:h')
 execute ':set tags+=' . fnamemodify(s:current_directory, ':h') . '/ctags/vex-tags'
+
+let g:vim_vex_autocomplete_loaded = '1'

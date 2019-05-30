@@ -12,7 +12,8 @@ through the function's arguments, one at a time.
 
 
 ## Installation
-This plugin depends on the [UltiSnips Vim plugin](https://github.com/SirVer/ultisnips)
+This plugin can be used as-is. But if you'd like arguments to be "steppable"
+like they are in the above demo, the [UltiSnips Vim plugin](https://github.com/SirVer/ultisnips) must be installed.
 
 If you're using a Vim plugin mananger such as [vim-plug](https://github.com/junegunn/vim-plug), all you have to do is add these lines to your .vimrc:
 
